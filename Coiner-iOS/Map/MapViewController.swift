@@ -30,12 +30,15 @@ class MapViewController: UIViewController {
     @IBOutlet weak var navigatorIconImageView: UIImageView!
     @IBOutlet weak var coinerLogoImageView: UIImageView!
     
+    @IBOutlet weak var selectedVendorTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpLocationManagerAndMapView()
         initializeMarkers()
         setUpCoinerTapGesture()
         setUpNavigatorTapGesture()
+        setUpTableView()
         // Do any additional setup after loading the view.
     }
 

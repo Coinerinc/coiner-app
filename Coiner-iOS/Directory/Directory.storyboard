@@ -211,9 +211,16 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwv-Rh-Ixb">
+                                                <rect key="frame" x="0.0" y="93.5" width="310.5" height="108.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <color key="textColor" red="0.05509718508" green="0.01947172917" blue="0.80397069450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="zwv-Rh-Ixb" firstAttribute="width" secondItem="p1N-WV-SV0" secondAttribute="width" id="4jf-dO-JKy"/>
                                             <constraint firstItem="Bte-GR-KYl" firstAttribute="top" secondItem="eu7-TZ-Pi7" secondAttribute="bottom" constant="8" id="8kc-2i-20M"/>
                                             <constraint firstItem="ooP-Kj-UBP" firstAttribute="top" secondItem="qhA-Yv-ZUg" secondAttribute="bottom" constant="8" id="CEB-gy-D47"/>
                                             <constraint firstItem="ooP-Kj-UBP" firstAttribute="centerX" secondItem="p1N-WV-SV0" secondAttribute="centerX" id="EkS-dc-R4n"/>
@@ -221,10 +228,13 @@
                                             <constraint firstItem="ooP-Kj-UBP" firstAttribute="width" secondItem="p1N-WV-SV0" secondAttribute="width" multiplier="0.98" id="Kns-rR-i9r"/>
                                             <constraint firstItem="g9X-Ke-f7u" firstAttribute="centerX" secondItem="p1N-WV-SV0" secondAttribute="centerX" id="LIf-XD-kXY"/>
                                             <constraint firstItem="g9X-Ke-f7u" firstAttribute="width" secondItem="p1N-WV-SV0" secondAttribute="width" multiplier="0.8" id="O3Y-49-PVD"/>
+                                            <constraint firstItem="zwv-Rh-Ixb" firstAttribute="centerX" secondItem="p1N-WV-SV0" secondAttribute="centerX" id="RLb-S6-oLM"/>
                                             <constraint firstItem="qhA-Yv-ZUg" firstAttribute="top" secondItem="Bte-GR-KYl" secondAttribute="bottom" constant="8" id="UP6-bW-Cyt"/>
+                                            <constraint firstItem="zwv-Rh-Ixb" firstAttribute="top" secondItem="Bte-GR-KYl" secondAttribute="bottom" constant="8" id="VCd-e0-gh9"/>
                                             <constraint firstItem="Bte-GR-KYl" firstAttribute="centerX" secondItem="p1N-WV-SV0" secondAttribute="centerX" id="Z3i-dN-zD3"/>
                                             <constraint firstItem="qhA-Yv-ZUg" firstAttribute="centerX" secondItem="p1N-WV-SV0" secondAttribute="centerX" id="bME-un-1d8"/>
                                             <constraint firstItem="qhA-Yv-ZUg" firstAttribute="height" secondItem="p1N-WV-SV0" secondAttribute="height" multiplier="0.12" id="dRe-5A-hgh"/>
+                                            <constraint firstItem="ooP-Kj-UBP" firstAttribute="bottom" secondItem="zwv-Rh-Ixb" secondAttribute="bottom" constant="8" id="jjT-4f-q99"/>
                                             <constraint firstItem="eu7-TZ-Pi7" firstAttribute="centerX" secondItem="p1N-WV-SV0" secondAttribute="centerX" id="jmC-YF-aga"/>
                                             <constraint firstItem="g9X-Ke-f7u" firstAttribute="top" secondItem="ooP-Kj-UBP" secondAttribute="bottom" constant="8" id="jqW-k8-Cpq"/>
                                             <constraint firstItem="eu7-TZ-Pi7" firstAttribute="width" secondItem="p1N-WV-SV0" secondAttribute="width" multiplier="0.9" id="ly0-td-DzC"/>
@@ -283,6 +293,7 @@
                         <outlet property="transactionsStackView" destination="RdX-Gu-7bw" id="bLK-uH-HFX"/>
                         <outlet property="usernameTextField" destination="c93-o9-4jO" id="nXK-SH-h7W"/>
                         <outlet property="walletStackView" destination="GGN-8g-1yJ" id="4ED-19-Nhv"/>
+                        <outlet property="welcomeLabel" destination="zwv-Rh-Ixb" id="cOB-uT-cYw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uu7-94-zwY" userLabel="First Responder" sceneMemberID="firstResponder"/>

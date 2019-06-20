@@ -15,6 +15,7 @@ extension DirectoryViewController: UIScrollViewDelegate {
         checkForCurrentUser()
         switch isCurrentlyLoggedIn {
         case false:
+            welcomeLabel.isHidden = false
             currentUserView.isHidden = true
             transactionsStackView.isHidden = true
             rewardsStackView.isHidden = true
@@ -22,6 +23,7 @@ extension DirectoryViewController: UIScrollViewDelegate {
             logOut_signInButton.setTitle("Log In/Sign Up", for: .normal)
             logOut_signInButton.tintColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
         case true:
+            welcomeLabel.isHidden = true 
             currentUserView.isHidden = false
             transactionsStackView.isHidden = false
             rewardsStackView.isHidden = false
@@ -42,9 +44,7 @@ extension DirectoryViewController: UIScrollViewDelegate {
             let initialOffset = self.view.bounds.width * 0.75
             let percentMoved = ((initialOffset - scrollView.contentOffset.x) / initialOffset)
             self.dimView.alpha = 0.6 * percentMoved
-        } else if scrollView.tag == 2 {
-            let initialOffset = self.view.bounds.height
-        }
+        } 
     }
 }
 

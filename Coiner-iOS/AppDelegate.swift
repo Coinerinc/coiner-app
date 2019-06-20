@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 import GooglePlaces
 
-    var currentUser: User?
+var currentUser: User?
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyB-3ct-ok6PQMSKtnTtmeIRO4lx9bLQW4Y")
         GMSPlacesClient.provideAPIKey("AIzaSyB-3ct-ok6PQMSKtnTtmeIRO4lx9bLQW4Y")
+        // MARK:
+        print("Remove Testing User in App Delegate")
+        currentUser = User(uniqueID: "2019", phoneNumber: 7322788499, email: "coiner@Coiner.com", name: "Coiner", imageID: "2019", joinedDate: Date(), favorites: [], transactions: [], rewards: [])
         return true
     }
 

@@ -27,6 +27,7 @@ class DirectoryViewController: UIViewController {
     @IBOutlet weak var drawerScrollView: UIScrollView!
     
     @IBOutlet weak var currentUserView: UIView!
+    @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var profileImageView: RoundedImageView!
     @IBOutlet weak var usernameTextField: UILabel!
     @IBOutlet weak var profileButton: UIButton!
@@ -46,20 +47,20 @@ class DirectoryViewController: UIViewController {
         hideDrawer()
     }
     @IBAction func didTapTransactionsButton(_ sender: UIButton) {
-        print("TODO: Display Transactions View")
+        displayCurrentTab(VCIndices.transactionsVC.rawValue)
         hideDrawer()
     }
     @IBAction func didTapRewardsButton(_ sender: UIButton) {
-        print("TODO: Display Rewards View")
+        displayCurrentTab(VCIndices.rewardsVC.rawValue)
         hideDrawer()
     }
     @IBAction func didTapWalletButton(_ sender: UIButton) {
-        print("TODO: Display Wallet View")
+        displayCurrentTab(VCIndices.walletVC.rawValue)
         hideDrawer()
     }
     
     @IBAction func didTapAboutCoinerButton(_ sender: UIButton) {
-        print("TODO: Display About Coiner View")
+        displayCurrentTab(VCIndices.aboutCoinerVC.rawValue)
         hideDrawer()
     }
     @IBAction func didTapLogOut_SignInButton(_ sender: UIButton) {
@@ -72,16 +73,37 @@ class DirectoryViewController: UIViewController {
         }
     }
     
+    
     var drawerTapGesture = UITapGestureRecognizer()
     
     var panGesture = UIScreenEdgePanGestureRecognizer()
     var currentViewController: UIViewController?
-    lazy var mapVC: UIViewController? = {
-        let mapVC = UIStoryboard(name: "Map", bundle: nil).instantiateViewController(withIdentifier: "Map") as! MapViewController
-        mapVC.masterViewController = self
-        return mapVC
+    
+    lazy var mapViewController: UIViewController? = {
+        let mapViewController = UIStoryboard(name: "Map", bundle: nil).instantiateViewController(withIdentifier: "Map") as! MapViewController
+        mapViewController.masterViewController = self
+        return mapViewController
     }()
-
+    lazy var transactionsViewController: UIViewController? = {
+        let transactionsViewController = UIStoryboard(name: "Transactions", bundle: nil).instantiateViewController(withIdentifier: "Transactions") as! TransactionsViewController
+        transactionsViewController.masterViewController = self
+        return transactionsViewController
+    }()
+    lazy var rewardsViewController: UIViewController? = {
+        let rewardsViewController = UIStoryboard(name: "Rewards", bundle: nil).instantiateViewController(withIdentifier: "Rewards") as! RewardsViewController
+        rewardsViewController.masterViewController = self
+        return rewardsViewController
+    }()
+    lazy var walletViewController: UIViewController? = {
+        let walletViewController = UIStoryboard(name: "Wallet", bundle: nil).instantiateViewController(withIdentifier: "Wallet") as! WalletViewController
+        walletViewController.masterViewController = self
+        return walletViewController
+    }()
+    lazy var aboutCoinerViewController: UIViewController? = {
+        let aboutCoinerViewController = UIStoryboard(name: "AboutCoiner", bundle: nil).instantiateViewController(withIdentifier: "AboutCoiner") as! AboutCoinerViewController
+        aboutCoinerViewController.masterViewController = self
+        return aboutCoinerViewController
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,24 +130,35 @@ class DirectoryViewController: UIViewController {
     func viewControllerForSelectedSegmentIndex(_ index: Int) -> UIViewController? {
         var vc: UIViewController?
         switch index {
-        case VCIndices.mapVC.rawValue :
-            vc = mapVC
+        case VCIndices.mapVC.rawValue:
+            vc = mapViewController
+        case VCIndices.transactionsVC.rawValue:
+            vc = transactionsViewController
+        case VCIndices.rewardsVC.rawValue:
+            vc = rewardsViewController
+        case VCIndices.walletVC.rawValue:
+            vc = walletViewController
+        case VCIndices.aboutCoinerVC.rawValue:
+            vc = aboutCoinerViewController
         default:
-            return nil
+            return vc
         }
         return vc
     }
     
     func checkForCurrentUser() {
-        currentUser = User(uniqueID: "2019", phoneNumber: 7322788499, email: "coiner@Coiner.com", name: "Coiner", imageID: "2019", joinedDate: Date(), favorites: [], transactions: [], rewards: [])
         if currentUser != nil {
             isCurrentlyLoggedIn = true
             usernameTextField.text = currentUser?.name
+        } else {
+            isCurrentlyLoggedIn = false 
         }
     }
     
     func handleLogOut() {
         print("TODO: Implement Handle Log Out Function")
+        currentUser = nil
+        configureDrawerComponents()
     }
 }
 

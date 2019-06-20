@@ -11,5 +11,6 @@ import Foundation
 struct Reward {
     var uniqueID: String 
     var title: String
-    var creationDate: Date
+    var date: Date
+    var points: Int
 }

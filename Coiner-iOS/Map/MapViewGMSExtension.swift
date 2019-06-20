@@ -48,6 +48,7 @@ extension MapViewController: GMSMapViewDelegate, CLLocationManagerDelegate {
 
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
         masterViewController?.hideDrawer()
+        hideTableView()
     }
     
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
@@ -62,21 +63,22 @@ extension MapViewController: GMSMapViewDelegate, CLLocationManagerDelegate {
         if let transactions = currentUser?.transactions, let selectedVendor = selectedVendor {
             transactionsAtSelectedVendor = transactions.filter({$0.vendor == selectedVendor})
         }
+        presentTableView(forSelectedVendor: selectedVendor!)
     }
     
     // MARK: Location Manager Error Handling
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        print("TODO: Add Error Alerts")
         switch status {
         case .restricted:
             print("Location access was restricted.")
+           displayDefaultLocationForMapView()
+            Alerts.presentErrorAlert(presentingViewController: self, withTitle: "Location Services Error", withMessage: "Your location access was restricted. Please check your settings to allow location services for Coiner.", defaultActionTitle: "Dismiss")
         case .denied:
-            print("User denied access to location.")
-            // Display the map using the default location.
-            mapView.isHidden = false
+            displayDefaultLocationForMapView()
+             Alerts.presentErrorAlert(presentingViewController: self, withTitle: "Location Services Error", withMessage: "You have denied Coiner's access to your location services. Please check your settings to allow location services for Coiner.", defaultActionTitle: "Dismiss")
         case .notDetermined:
-            print("Location status not determined.")
-            // Display the map using the default location.
+            displayDefaultLocationForMapView()
+            Alerts.presentErrorAlert(presentingViewController: self, withTitle: "Location Services Error", withMessage: "Coiner is unable to check the status of your location.", defaultActionTitle: "Dismiss")
         case .authorizedAlways: fallthrough
         case .authorizedWhenInUse:
             print("Location status is OK.")
@@ -88,7 +90,13 @@ extension MapViewController: GMSMapViewDelegate, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         locationManager.stopUpdatingLocation()
         print("Error: \(error)")
-        print("TODO: Alert Error")
+        Alerts.presentErrorAlert(presentingViewController: self, withTitle: "Location Services Error", withMessage: "We apologize for the inconvenience, but there seems to be an issue with your location services. Please restart the app to fix this issue. \n\n \(error.localizedDescription)", defaultActionTitle: "Okay")
+    }
+    
+    
+    func displayDefaultLocationForMapView() {
+        let camera = GMSCameraPosition.camera(withLatitude: 40.759211, longitude: -73.984638, zoom: zoomLevel)
+        mapView?.animate(to: camera)
     }
     
 

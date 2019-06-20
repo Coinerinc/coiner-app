@@ -34,6 +34,25 @@
 		2C277E2722B9FA0C00AB4DCD /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2622B9FA0C00AB4DCD /* DirectoryViewController.swift */; };
 		2C277E2922BA605400AB4DCD /* DirectoryGestureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2822BA605400AB4DCD /* DirectoryGestureExtensions.swift */; };
 		2C277E2B22BA678A00AB4DCD /* DirectoryAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2A22BA678A00AB4DCD /* DirectoryAnimations.swift */; };
+		2C7181F522BBC773005A1AF5 /* VendorInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181F422BBC773005A1AF5 /* VendorInformationTableViewCell.swift */; };
+		2C7181F722BBC783005A1AF5 /* VendorImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181F622BBC783005A1AF5 /* VendorImageTableViewCell.swift */; };
+		2C7181F922BBC792005A1AF5 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181F822BBC792005A1AF5 /* TransactionTableViewCell.swift */; };
+		2C7181FC22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181FB22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift */; };
+		2C7181FE22BBD318005A1AF5 /* TemporaryTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181FD22BBD318005A1AF5 /* TemporaryTransactions.swift */; };
+		2C71820022BBDF9E005A1AF5 /* CoinerConnection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7181FF22BBDF9E005A1AF5 /* CoinerConnection.storyboard */; };
+		2C71820222BBDFF1005A1AF5 /* CoinerConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71820122BBDFF1005A1AF5 /* CoinerConnectionViewController.swift */; };
+		2C71820422BBE02F005A1AF5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C71820322BBE02F005A1AF5 /* Profile.storyboard */; };
+		2C71820622BBE039005A1AF5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71820522BBE039005A1AF5 /* ProfileViewController.swift */; };
+		2C71820822BBE0B8005A1AF5 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71820722BBE0B8005A1AF5 /* TransactionsViewController.swift */; };
+		2C71820A22BBE0D3005A1AF5 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C71820922BBE0D3005A1AF5 /* Transactions.storyboard */; };
+		2C71820C22BBE0F0005A1AF5 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71820B22BBE0F0005A1AF5 /* RewardsViewController.swift */; };
+		2C71820E22BBE103005A1AF5 /* Rewards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C71820D22BBE103005A1AF5 /* Rewards.storyboard */; };
+		2C71821022BBE22B005A1AF5 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71820F22BBE22B005A1AF5 /* WalletViewController.swift */; };
+		2C71821222BBE235005A1AF5 /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C71821122BBE235005A1AF5 /* Wallet.storyboard */; };
+		2C71821422BBE261005A1AF5 /* AboutCoinerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821322BBE261005A1AF5 /* AboutCoinerViewController.swift */; };
+		2C71821622BBE27A005A1AF5 /* AboutCoiner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C71821522BBE27A005A1AF5 /* AboutCoiner.storyboard */; };
+		2C71821A22BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821922BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift */; };
+		2C71821C22BBF37C005A1AF5 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +84,25 @@
 		2C277E2622B9FA0C00AB4DCD /* DirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 		2C277E2822BA605400AB4DCD /* DirectoryGestureExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryGestureExtensions.swift; sourceTree = "<group>"; };
 		2C277E2A22BA678A00AB4DCD /* DirectoryAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryAnimations.swift; sourceTree = "<group>"; };
+		2C7181F422BBC773005A1AF5 /* VendorInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorInformationTableViewCell.swift; sourceTree = "<group>"; };
+		2C7181F622BBC783005A1AF5 /* VendorImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorImageTableViewCell.swift; sourceTree = "<group>"; };
+		2C7181F822BBC792005A1AF5 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		2C7181FB22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTableViewExtension.swift; sourceTree = "<group>"; };
+		2C7181FD22BBD318005A1AF5 /* TemporaryTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryTransactions.swift; sourceTree = "<group>"; };
+		2C7181FF22BBDF9E005A1AF5 /* CoinerConnection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoinerConnection.storyboard; sourceTree = "<group>"; };
+		2C71820122BBDFF1005A1AF5 /* CoinerConnectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinerConnectionViewController.swift; sourceTree = "<group>"; };
+		2C71820322BBE02F005A1AF5 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		2C71820522BBE039005A1AF5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2C71820722BBE0B8005A1AF5 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		2C71820922BBE0D3005A1AF5 /* Transactions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
+		2C71820B22BBE0F0005A1AF5 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		2C71820D22BBE103005A1AF5 /* Rewards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rewards.storyboard; sourceTree = "<group>"; };
+		2C71820F22BBE22B005A1AF5 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		2C71821122BBE235005A1AF5 /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
+		2C71821322BBE261005A1AF5 /* AboutCoinerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoinerViewController.swift; sourceTree = "<group>"; };
+		2C71821522BBE27A005A1AF5 /* AboutCoiner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutCoiner.storyboard; sourceTree = "<group>"; };
+		2C71821922BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryImageNetoworkCalls.swift; sourceTree = "<group>"; };
+		2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		379317DC4DC5D181F5127470 /* Pods_Coiner_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coiner_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E24A50399A6E753EC07C44A /* Pods-Coiner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B014288473987EA1F765B124 /* Pods-Coiner-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +123,8 @@
 		2C02409422BB11A0006E2585 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				2C71820722BBE0B8005A1AF5 /* TransactionsViewController.swift */,
+				2C71820922BBE0D3005A1AF5 /* Transactions.storyboard */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -92,6 +132,8 @@
 		2C02409522BB11A6006E2585 /* Rewards */ = {
 			isa = PBXGroup;
 			children = (
+				2C71820B22BBE0F0005A1AF5 /* RewardsViewController.swift */,
+				2C71820D22BBE103005A1AF5 /* Rewards.storyboard */,
 			);
 			path = Rewards;
 			sourceTree = "<group>";
@@ -99,6 +141,8 @@
 		2C02409622BB11AC006E2585 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				2C71820522BBE039005A1AF5 /* ProfileViewController.swift */,
+				2C71820322BBE02F005A1AF5 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -106,6 +150,8 @@
 		2C02409722BB11B2006E2585 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				2C71820F22BBE22B005A1AF5 /* WalletViewController.swift */,
+				2C71821122BBE235005A1AF5 /* Wallet.storyboard */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -113,6 +159,8 @@
 		2C02409822BB11BA006E2585 /* About Coiner */ = {
 			isa = PBXGroup;
 			children = (
+				2C71821322BBE261005A1AF5 /* AboutCoinerViewController.swift */,
+				2C71821522BBE27A005A1AF5 /* AboutCoiner.storyboard */,
 			);
 			path = "About Coiner";
 			sourceTree = "<group>";
@@ -120,6 +168,8 @@
 		2C02409922BB11D7006E2585 /* CoinerConnection */ = {
 			isa = PBXGroup;
 			children = (
+				2C71820122BBDFF1005A1AF5 /* CoinerConnectionViewController.swift */,
+				2C7181FF22BBDF9E005A1AF5 /* CoinerConnection.storyboard */,
 			);
 			path = CoinerConnection;
 			sourceTree = "<group>";
@@ -144,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				2C0240A722BB37A5006E2585 /* TemporaryVendors.swift */,
+				2C7181FD22BBD318005A1AF5 /* TemporaryTransactions.swift */,
 			);
 			path = "Temporary Models";
 			sourceTree = "<group>";
@@ -178,6 +229,7 @@
 				2C02409522BB11A6006E2585 /* Rewards */,
 				2C02409722BB11B2006E2585 /* Wallet */,
 				2C02409822BB11BA006E2585 /* About Coiner */,
+				2C71821722BBEAA4005A1AF5 /* Network Calls */,
 				2C02409B22BB1287006E2585 /* Alerts */,
 				2C02409A22BB127B006E2585 /* Transitions */,
 				2C277E0F22B9E12000AB4DCD /* Extensions */,
@@ -192,6 +244,7 @@
 		2C277E0B22B9DFD100AB4DCD /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				2C7181FA22BBC7FF005A1AF5 /* Table View */,
 				2C277DFB22B9DF5C00AB4DCD /* MapViewController.swift */,
 				2C277E1722B9E89E00AB4DCD /* MapViewGMSExtension.swift */,
 				2C277E1922B9EF6400AB4DCD /* MapViewGestureExtension.swift */,
@@ -221,6 +274,7 @@
 				2C277E1322B9E18100AB4DCD /* UIViewExtensions.swift */,
 				2C02408F22BAE38C006E2585 /* BackgroundGestureExtensions.swift */,
 				2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */,
+				2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -252,6 +306,41 @@
 				2C277E2422B9F9F900AB4DCD /* Directory.storyboard */,
 			);
 			path = Directory;
+			sourceTree = "<group>";
+		};
+		2C7181F122BBC743005A1AF5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2C7181F622BBC783005A1AF5 /* VendorImageTableViewCell.swift */,
+				2C7181F422BBC773005A1AF5 /* VendorInformationTableViewCell.swift */,
+				2C7181F822BBC792005A1AF5 /* TransactionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2C7181FA22BBC7FF005A1AF5 /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				2C7181FB22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift */,
+				2C7181F122BBC743005A1AF5 /* Cells */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		2C71821722BBEAA4005A1AF5 /* Network Calls */ = {
+			isa = PBXGroup;
+			children = (
+				2C71821822BBEAAF005A1AF5 /* Temporary Network Calls */,
+			);
+			path = "Network Calls";
+			sourceTree = "<group>";
+		};
+		2C71821822BBEAAF005A1AF5 /* Temporary Network Calls */ = {
+			isa = PBXGroup;
+			children = (
+				2C71821922BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift */,
+			);
+			path = "Temporary Network Calls";
 			sourceTree = "<group>";
 		};
 		54D2F6DDC5C06C3344D9870E /* Pods */ = {
@@ -331,10 +420,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C71820422BBE02F005A1AF5 /* Profile.storyboard in Resources */,
+				2C71820E22BBE103005A1AF5 /* Rewards.storyboard in Resources */,
+				2C71821622BBE27A005A1AF5 /* AboutCoiner.storyboard in Resources */,
 				2C277E2522B9F9F900AB4DCD /* Directory.storyboard in Resources */,
 				2C277E0422B9DF5D00AB4DCD /* LaunchScreen.storyboard in Resources */,
+				2C71820A22BBE0D3005A1AF5 /* Transactions.storyboard in Resources */,
 				2C277E0122B9DF5D00AB4DCD /* Assets.xcassets in Resources */,
+				2C71820022BBDF9E005A1AF5 /* CoinerConnection.storyboard in Resources */,
 				2C277DFF22B9DF5C00AB4DCD /* Map.storyboard in Resources */,
+				2C71821222BBE235005A1AF5 /* Wallet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,25 +490,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C277E1622B9E42800AB4DCD /* RoundedUIImageViews.swift in Sources */,
+				2C71821422BBE261005A1AF5 /* AboutCoinerViewController.swift in Sources */,
+				2C71821C22BBF37C005A1AF5 /* UIImageExtensions.swift in Sources */,
 				2C277E2722B9FA0C00AB4DCD /* DirectoryViewController.swift in Sources */,
 				2C0240A222BB36C0006E2585 /* Transaction.swift in Sources */,
 				2C277E1222B9E15800AB4DCD /* RoundedUIViews.swift in Sources */,
 				2C277E2922BA605400AB4DCD /* DirectoryGestureExtensions.swift in Sources */,
 				2C277E1D22B9F3C900AB4DCD /* UIViewAnimations.swift in Sources */,
+				2C7181F722BBC783005A1AF5 /* VendorImageTableViewCell.swift in Sources */,
 				2C02409022BAE38C006E2585 /* BackgroundGestureExtensions.swift in Sources */,
+				2C71820C22BBE0F0005A1AF5 /* RewardsViewController.swift in Sources */,
 				2C277E1A22B9EF6400AB4DCD /* MapViewGestureExtension.swift in Sources */,
 				2C277E1422B9E18100AB4DCD /* UIViewExtensions.swift in Sources */,
+				2C71820222BBDFF1005A1AF5 /* CoinerConnectionViewController.swift in Sources */,
 				2C277DFC22B9DF5C00AB4DCD /* MapViewController.swift in Sources */,
 				2C277E2B22BA678A00AB4DCD /* DirectoryAnimations.swift in Sources */,
+				2C71820622BBE039005A1AF5 /* ProfileViewController.swift in Sources */,
+				2C71820822BBE0B8005A1AF5 /* TransactionsViewController.swift in Sources */,
+				2C7181FE22BBD318005A1AF5 /* TemporaryTransactions.swift in Sources */,
 				2C277DFA22B9DF5C00AB4DCD /* AppDelegate.swift in Sources */,
+				2C7181FC22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift in Sources */,
 				2C0240A422BB36CD006E2585 /* Reward.swift in Sources */,
 				2C0240A822BB37A5006E2585 /* TemporaryVendors.swift in Sources */,
 				2C0240AA22BB4D25006E2585 /* DirectoryScrollViewDelegate.swift in Sources */,
+				2C7181F922BBC792005A1AF5 /* TransactionTableViewCell.swift in Sources */,
 				2C02409D22BB12F1006E2585 /* ViewControllerTransitions.swift in Sources */,
 				2C02409F22BB35FA006E2585 /* Vendor.swift in Sources */,
 				2C0240A622BB3701006E2585 /* Bank.swift in Sources */,
 				2C277E1822B9E89E00AB4DCD /* MapViewGMSExtension.swift in Sources */,
+				2C71821A22BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift in Sources */,
+				2C7181F522BBC773005A1AF5 /* VendorInformationTableViewCell.swift in Sources */,
 				2C277E0E22B9E00300AB4DCD /* User.swift in Sources */,
+				2C71821022BBE22B005A1AF5 /* WalletViewController.swift in Sources */,
 				2C0240AE22BBB9C4006E2585 /* Alerts.swift in Sources */,
 				2C0240AC22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift in Sources */,
 			);
