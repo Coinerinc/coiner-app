@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NtO-7R-Kak">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="Coiner_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZQ-gy-mgh" userLabel="Map View" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnQ-sj-51o" userLabel="Coiner Icon View" customClass="RoundedView" customModule="Coiner_iOS" customModuleProvider="target">
+                                <rect key="frame" x="165.5" y="759" width="83" height="83"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="PQJ-eK-Jat">
+                                        <rect key="frame" x="15" y="10" width="53" height="58"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.05509718508" green="0.01947172917" blue="0.80397069450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="PQJ-eK-Jat" firstAttribute="top" secondItem="HnQ-sj-51o" secondAttribute="top" constant="10" id="Rzd-om-xtJ"/>
+                                    <constraint firstAttribute="width" secondItem="HnQ-sj-51o" secondAttribute="height" multiplier="1:1" id="YkM-NZ-tSy"/>
+                                    <constraint firstItem="PQJ-eK-Jat" firstAttribute="leading" secondItem="HnQ-sj-51o" secondAttribute="leading" constant="15" id="pr5-Oo-crR"/>
+                                    <constraint firstAttribute="trailing" secondItem="PQJ-eK-Jat" secondAttribute="trailing" constant="15" id="tjv-ga-tbh"/>
+                                    <constraint firstAttribute="bottom" secondItem="PQJ-eK-Jat" secondAttribute="bottom" constant="15" id="vkq-VF-BQ9"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfO-ih-RIF" userLabel="Navigator Icon View" customClass="RoundedImageView" customModule="Coiner_iOS" customModuleProvider="target">
+                                <rect key="frame" x="332" y="790" width="62" height="62"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigatorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vhL-0W-3f9">
+                                        <rect key="frame" x="10" y="10" width="42" height="42"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TfO-ih-RIF" secondAttribute="height" multiplier="1:1" id="Afk-gi-kxK"/>
+                                    <constraint firstAttribute="bottom" secondItem="vhL-0W-3f9" secondAttribute="bottom" constant="10" id="GMe-GO-85C"/>
+                                    <constraint firstItem="vhL-0W-3f9" firstAttribute="leading" secondItem="TfO-ih-RIF" secondAttribute="leading" constant="10" id="Xnw-HH-UG2"/>
+                                    <constraint firstItem="vhL-0W-3f9" firstAttribute="top" secondItem="TfO-ih-RIF" secondAttribute="top" constant="10" id="gsi-bd-EmP"/>
+                                    <constraint firstAttribute="trailing" secondItem="vhL-0W-3f9" secondAttribute="trailing" constant="10" id="lWp-WR-hv5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TfO-ih-RIF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.15" id="8hn-LB-Tpq"/>
+                            <constraint firstAttribute="bottom" secondItem="EZQ-gy-mgh" secondAttribute="bottom" id="Aam-00-csp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TfO-ih-RIF" secondAttribute="trailing" constant="20" id="Bu4-d8-eVL"/>
+                            <constraint firstItem="EZQ-gy-mgh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Gal-MU-1XF"/>
+                            <constraint firstItem="HnQ-sj-51o" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="Hgf-D8-l6f"/>
+                            <constraint firstItem="HnQ-sj-51o" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HzA-cN-tat"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HnQ-sj-51o" secondAttribute="bottom" constant="20" id="f3W-G9-IVa"/>
+                            <constraint firstItem="EZQ-gy-mgh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hib-tZ-CHH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TfO-ih-RIF" secondAttribute="bottom" constant="10" id="mpm-Dz-UFD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EZQ-gy-mgh" secondAttribute="trailing" id="tJf-MQ-pDd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R5S-w6-4ah"/>
+                    <connections>
+                        <outlet property="coinerLogoImageView" destination="PQJ-eK-Jat" id="auB-qm-9rQ"/>
+                        <outlet property="coinerView" destination="HnQ-sj-51o" id="99G-xN-vu9"/>
+                        <outlet property="mapView" destination="EZQ-gy-mgh" id="IzS-FX-I1G"/>
+                        <outlet property="navigatorIconImageView" destination="vhL-0W-3f9" id="32L-Hh-aFk"/>
+                        <outlet property="navigatorView" destination="TfO-ih-RIF" id="OMn-ew-c2B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cff-q8-LT3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NtO-7R-Kak" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aLT-Wc-sv0">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6nm-jU-qvY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFl-dW-0WY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="180" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coinerLogo" width="550" height="680"/>
+        <image name="navigatorIcon" width="3988" height="3988"/>
+    </resources>
+</document>

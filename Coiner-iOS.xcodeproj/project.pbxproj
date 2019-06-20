@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16A9476BF0AD9AFD69BE26D9 /* Pods_Coiner_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379317DC4DC5D181F5127470 /* Pods_Coiner_iOS.framework */; };
+		2C02409022BAE38C006E2585 /* BackgroundGestureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C02408F22BAE38C006E2585 /* BackgroundGestureExtensions.swift */; };
+		2C02409D22BB12F1006E2585 /* ViewControllerTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C02409C22BB12F1006E2585 /* ViewControllerTransitions.swift */; };
+		2C02409F22BB35FA006E2585 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C02409E22BB35FA006E2585 /* Vendor.swift */; };
+		2C0240A222BB36C0006E2585 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240A122BB36C0006E2585 /* Transaction.swift */; };
+		2C0240A422BB36CD006E2585 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240A322BB36CD006E2585 /* Reward.swift */; };
+		2C0240A622BB3701006E2585 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240A522BB3701006E2585 /* Bank.swift */; };
+		2C0240A822BB37A5006E2585 /* TemporaryVendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240A722BB37A5006E2585 /* TemporaryVendors.swift */; };
+		2C0240AA22BB4D25006E2585 /* DirectoryScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240A922BB4D25006E2585 /* DirectoryScrollViewDelegate.swift */; };
+		2C0240AC22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */; };
+		2C277DFA22B9DF5C00AB4DCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277DF922B9DF5C00AB4DCD /* AppDelegate.swift */; };
+		2C277DFC22B9DF5C00AB4DCD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277DFB22B9DF5C00AB4DCD /* MapViewController.swift */; };
+		2C277DFF22B9DF5C00AB4DCD /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C277DFD22B9DF5C00AB4DCD /* Map.storyboard */; };
+		2C277E0122B9DF5D00AB4DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C277E0022B9DF5D00AB4DCD /* Assets.xcassets */; };
+		2C277E0422B9DF5D00AB4DCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C277E0222B9DF5D00AB4DCD /* LaunchScreen.storyboard */; };
+		2C277E0E22B9E00300AB4DCD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E0D22B9E00300AB4DCD /* User.swift */; };
+		2C277E1222B9E15800AB4DCD /* RoundedUIViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E1122B9E15800AB4DCD /* RoundedUIViews.swift */; };
+		2C277E1422B9E18100AB4DCD /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E1322B9E18100AB4DCD /* UIViewExtensions.swift */; };
+		2C277E1622B9E42800AB4DCD /* RoundedUIImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E1522B9E42800AB4DCD /* RoundedUIImageViews.swift */; };
+		2C277E1822B9E89E00AB4DCD /* MapViewGMSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E1722B9E89E00AB4DCD /* MapViewGMSExtension.swift */; };
+		2C277E1A22B9EF6400AB4DCD /* MapViewGestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E1922B9EF6400AB4DCD /* MapViewGestureExtension.swift */; };
+		2C277E1D22B9F3C900AB4DCD /* UIViewAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E1C22B9F3C900AB4DCD /* UIViewAnimations.swift */; };
+		2C277E2522B9F9F900AB4DCD /* Directory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C277E2422B9F9F900AB4DCD /* Directory.storyboard */; };
+		2C277E2722B9FA0C00AB4DCD /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2622B9FA0C00AB4DCD /* DirectoryViewController.swift */; };
+		2C277E2922BA605400AB4DCD /* DirectoryGestureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2822BA605400AB4DCD /* DirectoryGestureExtensions.swift */; };
+		2C277E2B22BA678A00AB4DCD /* DirectoryAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2A22BA678A00AB4DCD /* DirectoryAnimations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2C02408F22BAE38C006E2585 /* BackgroundGestureExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundGestureExtensions.swift; sourceTree = "<group>"; };
+		2C02409C22BB12F1006E2585 /* ViewControllerTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTransitions.swift; sourceTree = "<group>"; };
+		2C02409E22BB35FA006E2585 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
+		2C0240A122BB36C0006E2585 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		2C0240A322BB36CD006E2585 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		2C0240A522BB3701006E2585 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		2C0240A722BB37A5006E2585 /* TemporaryVendors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryVendors.swift; sourceTree = "<group>"; };
+		2C0240A922BB4D25006E2585 /* DirectoryScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryScrollViewDelegate.swift; sourceTree = "<group>"; };
+		2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLOcationCoordinate2DExtensions.swift; sourceTree = "<group>"; };
+		2C277DF622B9DF5C00AB4DCD /* Coiner-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coiner-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C277DF922B9DF5C00AB4DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C277DFB22B9DF5C00AB4DCD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2C277DFE22B9DF5C00AB4DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Map.storyboard; sourceTree = "<group>"; };
+		2C277E0022B9DF5D00AB4DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C277E0322B9DF5D00AB4DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C277E0522B9DF5D00AB4DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C277E0D22B9E00300AB4DCD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2C277E1122B9E15800AB4DCD /* RoundedUIViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIViews.swift; sourceTree = "<group>"; };
+		2C277E1322B9E18100AB4DCD /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		2C277E1522B9E42800AB4DCD /* RoundedUIImageViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIImageViews.swift; sourceTree = "<group>"; };
+		2C277E1722B9E89E00AB4DCD /* MapViewGMSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewGMSExtension.swift; sourceTree = "<group>"; };
+		2C277E1922B9EF6400AB4DCD /* MapViewGestureExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewGestureExtension.swift; sourceTree = "<group>"; };
+		2C277E1C22B9F3C900AB4DCD /* UIViewAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAnimations.swift; sourceTree = "<group>"; };
+		2C277E2422B9F9F900AB4DCD /* Directory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Directory.storyboard; sourceTree = "<group>"; };
+		2C277E2622B9FA0C00AB4DCD /* DirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
+		2C277E2822BA605400AB4DCD /* DirectoryGestureExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryGestureExtensions.swift; sourceTree = "<group>"; };
+		2C277E2A22BA678A00AB4DCD /* DirectoryAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryAnimations.swift; sourceTree = "<group>"; };
+		379317DC4DC5D181F5127470 /* Pods_Coiner_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coiner_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E24A50399A6E753EC07C44A /* Pods-Coiner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B014288473987EA1F765B124 /* Pods-Coiner-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C277DF322B9DF5C00AB4DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16A9476BF0AD9AFD69BE26D9 /* Pods_Coiner_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C02409422BB11A0006E2585 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		2C02409522BB11A6006E2585 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rewards;
+			sourceTree = "<group>";
+		};
+		2C02409622BB11AC006E2585 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2C02409722BB11B2006E2585 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		2C02409822BB11BA006E2585 /* About Coiner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "About Coiner";
+			sourceTree = "<group>";
+		};
+		2C02409922BB11D7006E2585 /* CoinerConnection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoinerConnection;
+			sourceTree = "<group>";
+		};
+		2C02409A22BB127B006E2585 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				2C02409C22BB12F1006E2585 /* ViewControllerTransitions.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		2C02409B22BB1287006E2585 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		2C0240A022BB3676006E2585 /* Temporary Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C0240A722BB37A5006E2585 /* TemporaryVendors.swift */,
+			);
+			path = "Temporary Models";
+			sourceTree = "<group>";
+		};
+		2C277DED22B9DF5C00AB4DCD = {
+			isa = PBXGroup;
+			children = (
+				2C277DF822B9DF5C00AB4DCD /* Coiner-iOS */,
+				2C277DF722B9DF5C00AB4DCD /* Products */,
+				54D2F6DDC5C06C3344D9870E /* Pods */,
+				BE9CB6EA3AF83B5440810013 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2C277DF722B9DF5C00AB4DCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C277DF622B9DF5C00AB4DCD /* Coiner-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C277DF822B9DF5C00AB4DCD /* Coiner-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2C277E0C22B9DFF400AB4DCD /* Models */,
+				2C277E2322B9F9D000AB4DCD /* Directory */,
+				2C02409922BB11D7006E2585 /* CoinerConnection */,
+				2C02409622BB11AC006E2585 /* Profile */,
+				2C277E0B22B9DFD100AB4DCD /* Map */,
+				2C02409422BB11A0006E2585 /* Transactions */,
+				2C02409522BB11A6006E2585 /* Rewards */,
+				2C02409722BB11B2006E2585 /* Wallet */,
+				2C02409822BB11BA006E2585 /* About Coiner */,
+				2C02409B22BB1287006E2585 /* Alerts */,
+				2C02409A22BB127B006E2585 /* Transitions */,
+				2C277E0F22B9E12000AB4DCD /* Extensions */,
+				2C277DF922B9DF5C00AB4DCD /* AppDelegate.swift */,
+				2C277E0022B9DF5D00AB4DCD /* Assets.xcassets */,
+				2C277E0222B9DF5D00AB4DCD /* LaunchScreen.storyboard */,
+				2C277E0522B9DF5D00AB4DCD /* Info.plist */,
+			);
+			path = "Coiner-iOS";
+			sourceTree = "<group>";
+		};
+		2C277E0B22B9DFD100AB4DCD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				2C277DFB22B9DF5C00AB4DCD /* MapViewController.swift */,
+				2C277E1722B9E89E00AB4DCD /* MapViewGMSExtension.swift */,
+				2C277E1922B9EF6400AB4DCD /* MapViewGestureExtension.swift */,
+				2C277DFD22B9DF5C00AB4DCD /* Map.storyboard */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		2C277E0C22B9DFF400AB4DCD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C0240A022BB3676006E2585 /* Temporary Models */,
+				2C277E0D22B9E00300AB4DCD /* User.swift */,
+				2C02409E22BB35FA006E2585 /* Vendor.swift */,
+				2C0240A122BB36C0006E2585 /* Transaction.swift */,
+				2C0240A322BB36CD006E2585 /* Reward.swift */,
+				2C0240A522BB3701006E2585 /* Bank.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C277E0F22B9E12000AB4DCD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2C277E1B22B9F3AE00AB4DCD /* Animations */,
+				2C277E1022B9E13B00AB4DCD /* RoundedUIObjects */,
+				2C277E1322B9E18100AB4DCD /* UIViewExtensions.swift */,
+				2C02408F22BAE38C006E2585 /* BackgroundGestureExtensions.swift */,
+				2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2C277E1022B9E13B00AB4DCD /* RoundedUIObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2C277E1122B9E15800AB4DCD /* RoundedUIViews.swift */,
+				2C277E1522B9E42800AB4DCD /* RoundedUIImageViews.swift */,
+			);
+			path = RoundedUIObjects;
+			sourceTree = "<group>";
+		};
+		2C277E1B22B9F3AE00AB4DCD /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				2C277E1C22B9F3C900AB4DCD /* UIViewAnimations.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		2C277E2322B9F9D000AB4DCD /* Directory */ = {
+			isa = PBXGroup;
+			children = (
+				2C277E2622B9FA0C00AB4DCD /* DirectoryViewController.swift */,
+				2C0240A922BB4D25006E2585 /* DirectoryScrollViewDelegate.swift */,
+				2C277E2822BA605400AB4DCD /* DirectoryGestureExtensions.swift */,
+				2C277E2A22BA678A00AB4DCD /* DirectoryAnimations.swift */,
+				2C277E2422B9F9F900AB4DCD /* Directory.storyboard */,
+			);
+			path = Directory;
+			sourceTree = "<group>";
+		};
+		54D2F6DDC5C06C3344D9870E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E24A50399A6E753EC07C44A /* Pods-Coiner-iOS.debug.xcconfig */,
+				B014288473987EA1F765B124 /* Pods-Coiner-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE9CB6EA3AF83B5440810013 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379317DC4DC5D181F5127470 /* Pods_Coiner_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C277DF522B9DF5C00AB4DCD /* Coiner-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C277E0822B9DF5D00AB4DCD /* Build configuration list for PBXNativeTarget "Coiner-iOS" */;
+			buildPhases = (
+				C86EB708D8ED203C8F8DF45B /* [CP] Check Pods Manifest.lock */,
+				2C277DF222B9DF5C00AB4DCD /* Sources */,
+				2C277DF322B9DF5C00AB4DCD /* Frameworks */,
+				2C277DF422B9DF5C00AB4DCD /* Resources */,
+				208772E46D99B59143BD634F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coiner-iOS";
+			productName = "Coiner-iOS";
+			productReference = 2C277DF622B9DF5C00AB4DCD /* Coiner-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C277DEE22B9DF5C00AB4DCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Justin Furstoss";
+				TargetAttributes = {
+					2C277DF522B9DF5C00AB4DCD = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2C277DF122B9DF5C00AB4DCD /* Build configuration list for PBXProject "Coiner-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C277DED22B9DF5C00AB4DCD;
+			productRefGroup = 2C277DF722B9DF5C00AB4DCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C277DF522B9DF5C00AB4DCD /* Coiner-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C277DF422B9DF5C00AB4DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C277E2522B9F9F900AB4DCD /* Directory.storyboard in Resources */,
+				2C277E0422B9DF5D00AB4DCD /* LaunchScreen.storyboard in Resources */,
+				2C277E0122B9DF5D00AB4DCD /* Assets.xcassets in Resources */,
+				2C277DFF22B9DF5C00AB4DCD /* Map.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		208772E46D99B59143BD634F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86EB708D8ED203C8F8DF45B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coiner-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C277DF222B9DF5C00AB4DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C277E1622B9E42800AB4DCD /* RoundedUIImageViews.swift in Sources */,
+				2C277E2722B9FA0C00AB4DCD /* DirectoryViewController.swift in Sources */,
+				2C0240A222BB36C0006E2585 /* Transaction.swift in Sources */,
+				2C277E1222B9E15800AB4DCD /* RoundedUIViews.swift in Sources */,
+				2C277E2922BA605400AB4DCD /* DirectoryGestureExtensions.swift in Sources */,
+				2C277E1D22B9F3C900AB4DCD /* UIViewAnimations.swift in Sources */,
+				2C02409022BAE38C006E2585 /* BackgroundGestureExtensions.swift in Sources */,
+				2C277E1A22B9EF6400AB4DCD /* MapViewGestureExtension.swift in Sources */,
+				2C277E1422B9E18100AB4DCD /* UIViewExtensions.swift in Sources */,
+				2C277DFC22B9DF5C00AB4DCD /* MapViewController.swift in Sources */,
+				2C277E2B22BA678A00AB4DCD /* DirectoryAnimations.swift in Sources */,
+				2C277DFA22B9DF5C00AB4DCD /* AppDelegate.swift in Sources */,
+				2C0240A422BB36CD006E2585 /* Reward.swift in Sources */,
+				2C0240A822BB37A5006E2585 /* TemporaryVendors.swift in Sources */,
+				2C0240AA22BB4D25006E2585 /* DirectoryScrollViewDelegate.swift in Sources */,
+				2C02409D22BB12F1006E2585 /* ViewControllerTransitions.swift in Sources */,
+				2C02409F22BB35FA006E2585 /* Vendor.swift in Sources */,
+				2C0240A622BB3701006E2585 /* Bank.swift in Sources */,
+				2C277E1822B9E89E00AB4DCD /* MapViewGMSExtension.swift in Sources */,
+				2C277E0E22B9E00300AB4DCD /* User.swift in Sources */,
+				2C0240AC22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2C277DFD22B9DF5C00AB4DCD /* Map.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C277DFE22B9DF5C00AB4DCD /* Base */,
+			);
+			name = Map.storyboard;
+			sourceTree = "<group>";
+		};
+		2C277E0222B9DF5D00AB4DCD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C277E0322B9DF5D00AB4DCD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C277E0622B9DF5D00AB4DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C277E0722B9DF5D00AB4DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C277E0922B9DF5D00AB4DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E24A50399A6E753EC07C44A /* Pods-Coiner-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAK2QZ7T6V;
+				INFOPLIST_FILE = "Coiner-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinfurstoss.Coiner-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C277E0A22B9DF5D00AB4DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B014288473987EA1F765B124 /* Pods-Coiner-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZAK2QZ7T6V;
+				INFOPLIST_FILE = "Coiner-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.justinfurstoss.Coiner-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C277DF122B9DF5C00AB4DCD /* Build configuration list for PBXProject "Coiner-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C277E0622B9DF5D00AB4DCD /* Debug */,
+				2C277E0722B9DF5D00AB4DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C277E0822B9DF5D00AB4DCD /* Build configuration list for PBXNativeTarget "Coiner-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C277E0922B9DF5D00AB4DCD /* Debug */,
+				2C277E0A22B9DF5D00AB4DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C277DEE22B9DF5C00AB4DCD /* Project object */;
+}
