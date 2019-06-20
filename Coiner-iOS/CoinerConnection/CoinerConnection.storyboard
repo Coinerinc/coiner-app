@@ -17,9 +17,61 @@
                     <view key="view" contentMode="scaleToFill" id="jIA-WH-Mwq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1p-ai-r33" userLabel="Blurred View">
+                                <rect key="frame" x="10" y="89.5" width="394" height="806.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FJ-oJ-fGE" userLabel="Coiner Sync View" customClass="GradientBackgroundView" customModule="Coiner_iOS" customModuleProvider="target">
+                                <rect key="frame" x="20" y="99.5" width="374" height="645"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please hold your phone close to the reader" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab1-ms-hSU">
+                                        <rect key="frame" x="40" y="302" width="294" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.05509718508" green="0.01947172917" blue="0.80397069450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Ab1-ms-hSU" firstAttribute="leading" secondItem="7FJ-oJ-fGE" secondAttribute="leading" constant="40" id="PS4-Jk-k8c"/>
+                                    <constraint firstItem="Ab1-ms-hSU" firstAttribute="centerX" secondItem="7FJ-oJ-fGE" secondAttribute="centerX" id="fjw-pT-5EK"/>
+                                    <constraint firstItem="Ab1-ms-hSU" firstAttribute="centerY" secondItem="7FJ-oJ-fGE" secondAttribute="centerY" id="jkI-tY-jKQ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor1">
+                                        <color key="value" red="0.66274509803921566" green="0.8666666666666667" blue="0.85490196078431369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="gradientColor2">
+                                        <color key="value" red="0.4823529411764706" green="0.52941176470588236" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7FJ-oJ-fGE" firstAttribute="leading" secondItem="v1p-ai-r33" secondAttribute="leading" constant="10" id="00b-kC-DGH"/>
+                            <constraint firstItem="7FJ-oJ-fGE" firstAttribute="height" secondItem="v1p-ai-r33" secondAttribute="height" multiplier="0.8" id="56o-cp-DZn"/>
+                            <constraint firstItem="7FJ-oJ-fGE" firstAttribute="top" secondItem="v1p-ai-r33" secondAttribute="top" constant="10" id="N4z-C2-SwM"/>
+                            <constraint firstAttribute="bottom" secondItem="v1p-ai-r33" secondAttribute="bottom" id="S1g-Op-5eQ"/>
+                            <constraint firstItem="v1p-ai-r33" firstAttribute="height" secondItem="jIA-WH-Mwq" secondAttribute="height" multiplier="0.9" id="TIo-eR-lLV"/>
+                            <constraint firstItem="v1p-ai-r33" firstAttribute="leading" secondItem="YZn-Hu-n6l" secondAttribute="leading" constant="10" id="UhO-ff-ndS"/>
+                            <constraint firstItem="v1p-ai-r33" firstAttribute="trailing" secondItem="7FJ-oJ-fGE" secondAttribute="trailing" constant="10" id="bGz-ih-rHA"/>
+                            <constraint firstItem="YZn-Hu-n6l" firstAttribute="trailing" secondItem="v1p-ai-r33" secondAttribute="trailing" constant="10" id="uwE-5d-D4k"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YZn-Hu-n6l"/>
                     </view>
+                    <connections>
+                        <outlet property="blurredView" destination="v1p-ai-r33" id="cTW-86-POL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HlE-po-2Q8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -24,8 +24,13 @@ extension MapViewController: UIGestureRecognizerDelegate {
         
     }
     @objc func handleCoinerTapGesture(_ sender: UITapGestureRecognizer) {
-        print("TODO: Coiner Tap Gesture")
-        // MARK: Instantiate PopOver Presentation
+        let coinerConnectionViewController = UIStoryboard(name: "CoinerConnection", bundle: nil).instantiateViewController(withIdentifier: "CoinerConnection") as! CoinerConnectionViewController
+        coinerConnectionViewController.modalPresentationStyle = .overFullScreen
+        coinerConnectionViewController.masterViewController = masterViewController
+        UIView.animate(withDuration: 0.5) {
+            self.masterViewController?.dimView.alpha = 0.6
+        }
+        self.present(coinerConnectionViewController, animated: true)
     }
     
 
@@ -34,7 +39,6 @@ extension MapViewController: UIGestureRecognizerDelegate {
         navigatorTapGesture = UITapGestureRecognizer(target: self, action: #selector(MapViewController.handleNavigatorTapGesture(_:)))
         navigatorTapGesture.delegate = self 
         navigatorView.addGestureRecognizer(navigatorTapGesture)
-        
     }
     
     @objc func handleNavigatorTapGesture(_ sender: UITapGestureRecognizer) {

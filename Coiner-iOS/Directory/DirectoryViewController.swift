@@ -11,10 +11,11 @@ import UIKit
 
 enum VCIndices : Int {
     case mapVC = 0
-    case transactionsVC = 1
-    case rewardsVC = 2
-    case walletVC = 3
-    case aboutCoinerVC = 4
+    case profileVC = 1
+    case transactionsVC = 2
+    case rewardsVC = 3
+    case walletVC = 4
+    case aboutCoinerVC = 5
 }
 
 class DirectoryViewController: UIViewController {
@@ -30,20 +31,26 @@ class DirectoryViewController: UIViewController {
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var profileImageView: RoundedImageView!
     @IBOutlet weak var usernameTextField: UILabel!
+    @IBOutlet weak var currentBalanceLabel: UILabel!
+    @IBOutlet weak var currentRewardPoints: UILabel!
+    
+    
     @IBOutlet weak var profileButton: UIButton!
     @IBOutlet weak var mainStackView: UIStackView!
+    @IBOutlet weak var profileStackView: UIStackView!
     @IBOutlet weak var transactionsStackView: UIStackView!
     @IBOutlet weak var rewardsStackView: UIStackView!
     @IBOutlet weak var walletStackView: UIStackView!
     @IBOutlet weak var aboutStackView: UIStackView!
     @IBOutlet weak var logOut_signInButton: UIButton!
     
-    @IBAction func didTapProfileButton(_ sender: UIButton) {
-        print("TODO: Instantiate Profile Pop Over")
-        hideDrawer()
-    }
+
     @IBAction func didTapMainButton(_ sender: UIButton) {
         displayCurrentTab(VCIndices.mapVC.rawValue)
+        hideDrawer()
+    }
+    @IBAction func didTapProfileButton(_ sender: UIButton) {
+        displayCurrentTab(VCIndices.profileVC.rawValue)
         hideDrawer()
     }
     @IBAction func didTapTransactionsButton(_ sender: UIButton) {
@@ -69,7 +76,11 @@ class DirectoryViewController: UIViewController {
         case false :
             print("TODO: Instantiate Log In / Sign Up View Controller")
         case true :
-            Alerts.presentBiOptionAlert(presentingViewController: self, withTitle: "Leaving Coiner?", withMessage: "Are you sure you wish to log out of your Coiner account?", defaultActionTitle: "Log Out", destructiveActionTitle: "Cancel", withCompletion: handleLogOut())
+            Alerts.presentBiOptionAlert(presentingViewController: self, withTitle: "Leaving Coiner?", withMessage: "Are you sure you wish to log out of your Coiner account?", defaultActionTitle: "Log Out", destructiveActionTitle: "Cancel") { (defaultActionSelected) in
+                if (defaultActionSelected) {
+                    self.handleLogOut()
+                }
+            }
         }
     }
     
@@ -83,6 +94,10 @@ class DirectoryViewController: UIViewController {
         let mapViewController = UIStoryboard(name: "Map", bundle: nil).instantiateViewController(withIdentifier: "Map") as! MapViewController
         mapViewController.masterViewController = self
         return mapViewController
+    }()
+    lazy var profileViewController: UIViewController? = {
+        let profileViewController = UIStoryboard(name: "Profile", bundle: nil).instantiateViewController(withIdentifier: "Profile") as! ProfileViewController
+        return profileViewController
     }()
     lazy var transactionsViewController: UIViewController? = {
         let transactionsViewController = UIStoryboard(name: "Transactions", bundle: nil).instantiateViewController(withIdentifier: "Transactions") as! TransactionsViewController
@@ -132,6 +147,8 @@ class DirectoryViewController: UIViewController {
         switch index {
         case VCIndices.mapVC.rawValue:
             vc = mapViewController
+        case VCIndices.profileVC.rawValue:
+            vc = profileViewController
         case VCIndices.transactionsVC.rawValue:
             vc = transactionsViewController
         case VCIndices.rewardsVC.rawValue:
@@ -147,9 +164,11 @@ class DirectoryViewController: UIViewController {
     }
     
     func checkForCurrentUser() {
+
         if currentUser != nil {
             isCurrentlyLoggedIn = true
             usernameTextField.text = currentUser?.name
+            print("TODO: Set Current Balance Label && Total Reward Points Label")
         } else {
             isCurrentlyLoggedIn = false 
         }

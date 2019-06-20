@@ -57,6 +57,9 @@ extension MapViewController: UITableViewDataSource, UITableViewDelegate {
         case 1:
             let vendorInformationCell = tableView.dequeueReusableCell(withIdentifier: "VendorInformationCell", for: indexPath) as! VendorInformationTableViewCell
             vendorInformationCell.vendor = selectedVendor
+            if transactionsAtSelectedVendor.count > 0 {
+                vendorInformationCell.hasTransactedWithThisVendor = true 
+            }
             return vendorInformationCell
         case 2:
             let transactionCell = tableView.dequeueReusableCell(withIdentifier: "TransactionCell", for: indexPath) as! TransactionTableViewCell

@@ -53,6 +53,8 @@
 		2C71821622BBE27A005A1AF5 /* AboutCoiner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C71821522BBE27A005A1AF5 /* AboutCoiner.storyboard */; };
 		2C71821A22BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821922BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift */; };
 		2C71821C22BBF37C005A1AF5 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */; };
+		2C71821E22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821D22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift */; };
+		2C71822022BC2FE0005A1AF5 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -103,6 +105,8 @@
 		2C71821522BBE27A005A1AF5 /* AboutCoiner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutCoiner.storyboard; sourceTree = "<group>"; };
 		2C71821922BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryImageNetoworkCalls.swift; sourceTree = "<group>"; };
 		2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		2C71821D22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinerConnectionGestureRecognizerExtension.swift; sourceTree = "<group>"; };
+		2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		379317DC4DC5D181F5127470 /* Pods_Coiner_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coiner_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E24A50399A6E753EC07C44A /* Pods-Coiner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B014288473987EA1F765B124 /* Pods-Coiner-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				2C71820122BBDFF1005A1AF5 /* CoinerConnectionViewController.swift */,
+				2C71821D22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift */,
 				2C7181FF22BBDF9E005A1AF5 /* CoinerConnection.storyboard */,
 			);
 			path = CoinerConnection;
@@ -275,6 +280,7 @@
 				2C02408F22BAE38C006E2585 /* BackgroundGestureExtensions.swift */,
 				2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */,
 				2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */,
+				2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -508,6 +514,7 @@
 				2C71820622BBE039005A1AF5 /* ProfileViewController.swift in Sources */,
 				2C71820822BBE0B8005A1AF5 /* TransactionsViewController.swift in Sources */,
 				2C7181FE22BBD318005A1AF5 /* TemporaryTransactions.swift in Sources */,
+				2C71821E22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift in Sources */,
 				2C277DFA22B9DF5C00AB4DCD /* AppDelegate.swift in Sources */,
 				2C7181FC22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift in Sources */,
 				2C0240A422BB36CD006E2585 /* Reward.swift in Sources */,
@@ -515,6 +522,7 @@
 				2C0240AA22BB4D25006E2585 /* DirectoryScrollViewDelegate.swift in Sources */,
 				2C7181F922BBC792005A1AF5 /* TransactionTableViewCell.swift in Sources */,
 				2C02409D22BB12F1006E2585 /* ViewControllerTransitions.swift in Sources */,
+				2C71822022BC2FE0005A1AF5 /* GradientBackground.swift in Sources */,
 				2C02409F22BB35FA006E2585 /* Vendor.swift in Sources */,
 				2C0240A622BB3701006E2585 /* Bank.swift in Sources */,
 				2C277E1822B9E89E00AB4DCD /* MapViewGMSExtension.swift in Sources */,

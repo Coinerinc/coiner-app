@@ -15,12 +15,39 @@ class VendorInformationTableViewCell: UITableViewCell {
             configureVendorHeaderCell()
         }
     }
-    var isFavorited = false
+    
+    var hasTransactedWithThisVendor: Bool? {
+        didSet {
+            switch hasTransactedWithThisVendor {
+            case false:
+                transactionsStackView.isHidden = true
+            case true:
+                noTransactionsLabel.isHidden = true
+            default:
+                transactionsStackView.isHidden = true
+                noTransactionsLabel.isHidden = true
+            }
+        }
+    }
+    var isFavorited: Bool? {
+        didSet {
+            switch isFavorited {
+            case false:
+                print("This Vendor is not favorited")
+            case true:
+                print("This Vendor is Favorited")
+            default:
+                print("isFavorited Defaulted")
+            }
+        }
+    }
     
     @IBOutlet weak var vendorNameLabel: UILabel!
     @IBOutlet weak var vendorAddressLabel: UILabel!
     @IBOutlet weak var favoriteButton: UIButton!
     
+    @IBOutlet weak var transactionsStackView: UIStackView!
+    @IBOutlet weak var noTransactionsLabel: UILabel!
     
     @IBAction func didTapFavoriteButton(_ sender: UIButton) {
         print("TODO: Handle Did Tap Favorite Button")

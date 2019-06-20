@@ -11,22 +11,44 @@ import UIKit
 class CoinerConnectionViewController: UIViewController {
     
     var masterViewController: DirectoryViewController?
+    
+    var originalPosition: CGPoint?
+    var currentPositionTouched: CGPoint?
+    var panGestureRecognizer: UIPanGestureRecognizer?
+    var isCurrentlyLoggedIn = false
 
+    @IBOutlet weak var blurredView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpPanGesture()
+        setUpBlurredView()
+        setUpViewComponents()
 
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setUpBlurredView() {
+        self.blurredView.addBlurredEffect()
     }
-    */
+    
+    func checkForCurrentUser() {
+        if currentUser != nil {
+            isCurrentlyLoggedIn = true
+        } else {
+            isCurrentlyLoggedIn = false
+        }
+    }
+    
+    func setUpViewComponents() {
+        checkForCurrentUser()
+        switch isCurrentlyLoggedIn {
+        case true:
+            print("TODO: Present Coiner Sync Components")
+        case false:
+            print("TODO: Present Requred Log in/ SignUp Components")
+        }
+    }
 
 }

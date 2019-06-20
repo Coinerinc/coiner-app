@@ -17,6 +17,7 @@ extension DirectoryViewController: UIScrollViewDelegate {
         case false:
             welcomeLabel.isHidden = false
             currentUserView.isHidden = true
+            profileStackView.isHidden = true
             transactionsStackView.isHidden = true
             rewardsStackView.isHidden = true
             walletStackView.isHidden = true
@@ -25,6 +26,7 @@ extension DirectoryViewController: UIScrollViewDelegate {
         case true:
             welcomeLabel.isHidden = true 
             currentUserView.isHidden = false
+            profileStackView.isHidden = false
             transactionsStackView.isHidden = false
             rewardsStackView.isHidden = false
             walletStackView.isHidden = false

@@ -10,12 +10,14 @@ import Foundation
 import UIKit
 
 struct Alerts {
-    static func presentBiOptionAlert(presentingViewController viewController: UIViewController, withTitle title: String, withMessage message: String, defaultActionTitle: String, destructiveActionTitle: String, withCompletion completionFunction: ()) {
+    static func presentBiOptionAlert(presentingViewController viewController: UIViewController, withTitle title: String, withMessage message: String, defaultActionTitle: String, destructiveActionTitle: String, defaultActionSelected: @escaping (_: Bool) -> ()) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: defaultActionTitle, style: .default) { (completion) in
-            completionFunction
+            defaultActionSelected(true)
         }
-        let destructiveAction = UIAlertAction(title: destructiveActionTitle, style: .destructive, handler: nil)
+        let destructiveAction = UIAlertAction(title: destructiveActionTitle, style: .destructive) { (completion) in
+            defaultActionSelected(false)
+        }
         alertController.view.tintColor = #colorLiteral(red: 0.06169537455, green: 0.01816294342, blue: 0.8379738927, alpha: 1)
         alertController.addAction(defaultAction)
         alertController.addAction(destructiveAction)

@@ -92,33 +92,33 @@
                                             <outlet property="vendorImageView" destination="fxC-Wj-hmv" id="MdW-TF-nRF"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VendorInformationCell" rowHeight="80" id="55i-fl-CQg" customClass="VendorInformationTableViewCell" customModule="Coiner_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="228" width="394" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VendorInformationCell" rowHeight="100" id="55i-fl-CQg" customClass="VendorInformationTableViewCell" customModule="Coiner_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="228" width="394" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="55i-fl-CQg" id="89R-hO-Iyz">
-                                            <rect key="frame" x="0.0" y="0.0" width="394" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BKl-RD-33J">
-                                                    <rect key="frame" x="20" y="10" width="354" height="50.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="BKl-RD-33J">
+                                                    <rect key="frame" x="20" y="10" width="354" height="86"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendor Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Jq-R7c">
-                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4Mp-lB-U6d">
-                                                            <rect key="frame" x="0.0" y="20.5" width="354" height="30"/>
+                                                            <rect key="frame" x="0.0" y="22" width="354" height="20"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vendor Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fao-rz-YLW">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="20"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V9Z-dr-2Yh">
-                                                                    <rect key="frame" x="177" y="0.0" width="177" height="30"/>
+                                                                    <rect key="frame" x="177" y="0.0" width="177" height="20"/>
                                                                     <state key="normal" title="Favorite"/>
                                                                     <connections>
                                                                         <action selector="didTapFavoriteButton:" destination="55i-fl-CQg" eventType="touchUpInside" id="jYQ-Xl-MeP"/>
@@ -126,6 +126,42 @@
                                                                 </button>
                                                             </subviews>
                                                         </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="gjl-Sy-0hS">
+                                                            <rect key="frame" x="0.0" y="44" width="354" height="20"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions at this Vendor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="642-u5-vv0">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="285.5" height="20"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TJ-a9-kXD">
+                                                                    <rect key="frame" x="285.5" y="0.0" width="68.5" height="20"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="tJv-en-hJp">
+                                                                            <rect key="frame" x="24.5" y="0.0" width="20" height="20"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="20" id="0mt-dB-jRO"/>
+                                                                                <constraint firstAttribute="width" secondItem="tJv-en-hJp" secondAttribute="height" multiplier="1:1" id="6WU-Lc-lqF"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="bottom" secondItem="tJv-en-hJp" secondAttribute="bottom" id="8yD-VR-gjv"/>
+                                                                        <constraint firstItem="tJv-en-hJp" firstAttribute="top" secondItem="7TJ-a9-kXD" secondAttribute="top" id="Nnc-LE-vJU"/>
+                                                                        <constraint firstItem="tJv-en-hJp" firstAttribute="centerX" secondItem="7TJ-a9-kXD" secondAttribute="centerX" id="Yh8-fa-6es"/>
+                                                                        <constraint firstAttribute="height" constant="20" id="kW3-nZ-yXH"/>
+                                                                    </constraints>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Transaction have been made here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcv-oE-hfV">
+                                                            <rect key="frame" x="0.0" y="66" width="354" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
@@ -137,12 +173,14 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="favoriteButton" destination="V9Z-dr-2Yh" id="brQ-Ps-Jpt"/>
+                                            <outlet property="noTransactionsLabel" destination="Lcv-oE-hfV" id="ggP-Ba-5ZK"/>
+                                            <outlet property="transactionsStackView" destination="gjl-Sy-0hS" id="lnB-wo-vPB"/>
                                             <outlet property="vendorAddressLabel" destination="fao-rz-YLW" id="eWQ-gu-dDz"/>
                                             <outlet property="vendorNameLabel" destination="Kqc-Jq-R7c" id="adZ-Aq-klF"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionCell" rowHeight="100" id="pbL-Kp-cPE" customClass="TransactionTableViewCell" customModule="Coiner_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="308" width="394" height="100"/>
+                                        <rect key="frame" x="0.0" y="328" width="394" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pbL-Kp-cPE" id="TaL-mA-K63">
                                             <rect key="frame" x="0.0" y="0.0" width="394" height="99.5"/>
@@ -233,6 +271,7 @@
     </scenes>
     <resources>
         <image name="coinerLogo" width="550" height="680"/>
+        <image name="downArrow" width="2860" height="4002"/>
         <image name="navigatorIcon" width="3988" height="3988"/>
     </resources>
 </document>

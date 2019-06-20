@@ -55,14 +55,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bte-GR-KYl" userLabel="Line View">
-                                                <rect key="frame" x="3" y="84.5" width="304.5" height="1"/>
+                                                <rect key="frame" x="3" y="84.5" width="304.5" height="0.5"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="w2P-Fy-QvU"/>
+                                                    <constraint firstAttribute="height" constant="0.5" id="w2P-Fy-QvU"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhA-Yv-ZUg">
-                                                <rect key="frame" x="0.0" y="93.5" width="310.5" height="107.5"/>
+                                                <rect key="frame" x="0.0" y="93" width="310.5" height="107.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0W8-HV-5cs" customClass="RoundedImageView" customModule="Coiner_iOS" customModuleProvider="target">
                                                         <rect key="frame" x="20" y="7" width="93" height="93.5"/>
@@ -71,44 +71,57 @@
                                                             <constraint firstAttribute="width" secondItem="0W8-HV-5cs" secondAttribute="height" multiplier="1:1" id="nQJ-6S-z0n"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c93-o9-4jO">
-                                                        <rect key="frame" x="128" y="43.5" width="182.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggj-6a-cFZ">
-                                                        <rect key="frame" x="258.5" y="77.5" width="44" height="30"/>
-                                                        <state key="normal" title="Profile"/>
-                                                        <connections>
-                                                            <action selector="didTapProfileButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="HQt-Pt-CCN"/>
-                                                        </connections>
-                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sWs-16-cZZ">
+                                                        <rect key="frame" x="128" y="30" width="174.5" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c93-o9-4jO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="174.5" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hD7-HN-yiK">
+                                                                <rect key="frame" x="0.0" y="24" width="174.5" height="24"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$57.15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTQ-6w-BPS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123 pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koA-zD-j3V">
+                                                                        <rect key="frame" x="87.5" y="0.0" width="87" height="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="c93-o9-4jO" secondAttribute="trailing" id="0yB-lc-VD7"/>
+                                                    <constraint firstItem="sWs-16-cZZ" firstAttribute="leading" secondItem="0W8-HV-5cs" secondAttribute="trailing" constant="15" id="AeA-V6-lkd"/>
                                                     <constraint firstItem="0W8-HV-5cs" firstAttribute="centerY" secondItem="qhA-Yv-ZUg" secondAttribute="centerY" id="DVc-gL-HL6"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ggj-6a-cFZ" secondAttribute="trailing" constant="8" id="EfX-Iq-rMu"/>
-                                                    <constraint firstAttribute="bottom" secondItem="ggj-6a-cFZ" secondAttribute="bottom" id="aYu-fu-hKr"/>
+                                                    <constraint firstItem="sWs-16-cZZ" firstAttribute="centerY" secondItem="qhA-Yv-ZUg" secondAttribute="centerY" id="d0y-mJ-iWj"/>
                                                     <constraint firstItem="0W8-HV-5cs" firstAttribute="width" secondItem="qhA-Yv-ZUg" secondAttribute="width" multiplier="0.3" id="qvP-Lh-MHm"/>
-                                                    <constraint firstItem="c93-o9-4jO" firstAttribute="centerY" secondItem="0W8-HV-5cs" secondAttribute="centerY" id="sMg-AZ-OTw"/>
-                                                    <constraint firstItem="c93-o9-4jO" firstAttribute="leading" secondItem="0W8-HV-5cs" secondAttribute="trailing" constant="15" id="uHC-Yt-UXp"/>
                                                     <constraint firstItem="0W8-HV-5cs" firstAttribute="leading" secondItem="qhA-Yv-ZUg" secondAttribute="leading" constant="20" id="vyI-dp-kM9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sWs-16-cZZ" secondAttribute="trailing" constant="8" id="xfo-Qb-KA0"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ooP-Kj-UBP" userLabel="Line View">
-                                                <rect key="frame" x="3" y="209" width="304.5" height="1"/>
+                                                <rect key="frame" x="3" y="208.5" width="304.5" height="0.5"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="1" id="F1o-4j-pzg"/>
+                                                    <constraint firstAttribute="height" constant="0.5" id="F1o-4j-pzg"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="g9X-Ke-f7u">
-                                                <rect key="frame" x="31" y="218" width="248.5" height="250"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="g9X-Ke-f7u">
+                                                <rect key="frame" x="31" y="217" width="248.5" height="255"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXu-Vd-Lh9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="248.5" height="20"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VXu-Vd-Lh9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="63" height="20"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6He-pE-DKu">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -118,16 +131,39 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ns9-cD-Adx">
-                                                                <rect key="frame" x="20" y="0.0" width="228.5" height="20"/>
-                                                                <state key="normal" title="Main"/>
+                                                                <rect key="frame" x="30" y="0.0" width="33" height="20"/>
+                                                                <state key="normal" title="Main">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="didTapMainButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="WUI-O3-Wxx"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-Gu-7bw">
-                                                        <rect key="frame" x="0.0" y="46" width="248.5" height="20"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-Vd-Epx">
+                                                        <rect key="frame" x="0.0" y="47" width="74" height="20"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="8ls-tm-wfn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="EmB-5H-dUN"/>
+                                                                    <constraint firstAttribute="width" secondItem="8ls-tm-wfn" secondAttribute="height" multiplier="1:1" id="rMr-EZ-iNy"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggj-6a-cFZ">
+                                                                <rect key="frame" x="30" y="0.0" width="44" height="20"/>
+                                                                <state key="normal" title="Profile">
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="didTapProfileButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="HQt-Pt-CCN"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-Gu-7bw">
+                                                        <rect key="frame" x="0.0" y="94" width="118" height="20"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="transactionsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="P8k-ta-GgA">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -137,16 +173,18 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tzl-Y6-V2j">
-                                                                <rect key="frame" x="20" y="0.0" width="228.5" height="20"/>
-                                                                <state key="normal" title="Transactions"/>
+                                                                <rect key="frame" x="30" y="0.0" width="88" height="20"/>
+                                                                <state key="normal" title="Transactions">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="didTapTransactionsButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="SfA-bd-wYp"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOo-Wr-qfr">
-                                                        <rect key="frame" x="0.0" y="92" width="248.5" height="20"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QOo-Wr-qfr">
+                                                        <rect key="frame" x="0.0" y="141" width="89" height="20"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewardsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1Vz-9G-Vex">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -156,16 +194,18 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dT3-Mk-qau">
-                                                                <rect key="frame" x="20" y="0.0" width="228.5" height="20"/>
-                                                                <state key="normal" title="Rewards"/>
+                                                                <rect key="frame" x="30" y="0.0" width="59" height="20"/>
+                                                                <state key="normal" title="Rewards">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="didTapRewardsButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="gb6-UC-weq"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GGN-8g-1yJ">
-                                                        <rect key="frame" x="0.0" y="138" width="248.5" height="20"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GGN-8g-1yJ">
+                                                        <rect key="frame" x="0.0" y="188" width="73" height="20"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="walletIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Erf-gj-kYd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -175,16 +215,18 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFw-O1-hCr">
-                                                                <rect key="frame" x="20" y="0.0" width="228.5" height="20"/>
-                                                                <state key="normal" title="Wallet"/>
+                                                                <rect key="frame" x="30" y="0.0" width="43" height="20"/>
+                                                                <state key="normal" title="Wallet">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="didTapWalletButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="0gN-4V-JSp"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ora-IZ-ShM">
-                                                        <rect key="frame" x="0.0" y="184" width="248.5" height="20"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ora-IZ-ShM">
+                                                        <rect key="frame" x="0.0" y="235" width="121" height="20"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinerLogoGrey" translatesAutoresizingMaskIntoConstraints="NO" id="puV-VT-f3Y">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -194,32 +236,35 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tp9-3C-uui">
-                                                                <rect key="frame" x="20" y="0.0" width="228.5" height="20"/>
-                                                                <state key="normal" title="About Coiner"/>
+                                                                <rect key="frame" x="30" y="0.0" width="91" height="20"/>
+                                                                <state key="normal" title="About Coiner">
+                                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="didTapAboutCoinerButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="xBi-ca-PHy"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKJ-2W-Vwr" userLabel="Log Out">
-                                                        <rect key="frame" x="0.0" y="230" width="248.5" height="20"/>
-                                                        <state key="normal" title="Log Out"/>
-                                                        <connections>
-                                                            <action selector="didTapLogOut_SignInButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="pxw-3J-fsL"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwv-Rh-Ixb">
-                                                <rect key="frame" x="0.0" y="93.5" width="310.5" height="108.5"/>
+                                                <rect key="frame" x="0.0" y="93" width="310.5" height="108"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                 <color key="textColor" red="0.05509718508" green="0.01947172917" blue="0.80397069450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKJ-2W-Vwr" userLabel="Log Out">
+                                                <rect key="frame" x="128" y="812" width="55" height="30"/>
+                                                <state key="normal" title="Log Out"/>
+                                                <connections>
+                                                    <action selector="didTapLogOut_SignInButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="pxw-3J-fsL"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="WKJ-2W-Vwr" firstAttribute="centerX" secondItem="p1N-WV-SV0" secondAttribute="centerX" id="31n-x8-Cum"/>
                                             <constraint firstItem="zwv-Rh-Ixb" firstAttribute="width" secondItem="p1N-WV-SV0" secondAttribute="width" id="4jf-dO-JKy"/>
                                             <constraint firstItem="Bte-GR-KYl" firstAttribute="top" secondItem="eu7-TZ-Pi7" secondAttribute="bottom" constant="8" id="8kc-2i-20M"/>
                                             <constraint firstItem="ooP-Kj-UBP" firstAttribute="top" secondItem="qhA-Yv-ZUg" secondAttribute="bottom" constant="8" id="CEB-gy-D47"/>
@@ -266,6 +311,7 @@
                             <constraint firstAttribute="bottom" secondItem="WTC-wc-WUx" secondAttribute="bottom" id="OLq-HZ-KSn"/>
                             <constraint firstItem="0eB-ct-F75" firstAttribute="width" secondItem="V32-l1-ReB" secondAttribute="width" multiplier="0.75" id="Q6f-So-lXV"/>
                             <constraint firstAttribute="top" secondItem="0eB-ct-F75" secondAttribute="top" id="ZKd-Sm-50Q"/>
+                            <constraint firstItem="0Dw-kZ-SRP" firstAttribute="bottom" secondItem="WKJ-2W-Vwr" secondAttribute="bottom" constant="20" id="hIn-vF-Tel"/>
                             <constraint firstItem="p1N-WV-SV0" firstAttribute="width" secondItem="V32-l1-ReB" secondAttribute="width" multiplier="0.75" id="l52-5G-Lbf"/>
                             <constraint firstItem="0eB-ct-F75" firstAttribute="leading" secondItem="0Dw-kZ-SRP" secondAttribute="leading" id="nOc-ZX-mML"/>
                             <constraint firstItem="0eB-ct-F75" firstAttribute="bottom" secondItem="V32-l1-ReB" secondAttribute="bottom" id="ok8-Ob-0ws"/>
@@ -281,6 +327,8 @@
                     <connections>
                         <outlet property="aboutStackView" destination="ora-IZ-ShM" id="8jc-B0-3iE"/>
                         <outlet property="contentView" destination="WTC-wc-WUx" id="vkC-gg-Thm"/>
+                        <outlet property="currentBalanceLabel" destination="fTQ-6w-BPS" id="HjN-87-Nw0"/>
+                        <outlet property="currentRewardPoints" destination="koA-zD-j3V" id="hB1-7O-uC4"/>
                         <outlet property="currentUserView" destination="qhA-Yv-ZUg" id="7bj-sr-5Xp"/>
                         <outlet property="dimView" destination="56Y-EJ-9R7" id="U6c-hH-gnc"/>
                         <outlet property="drawerIconView" destination="tpH-Q6-GMf" id="Kcv-2d-sJX"/>
@@ -289,6 +337,7 @@
                         <outlet property="mainStackView" destination="VXu-Vd-Lh9" id="IL8-Oz-wGM"/>
                         <outlet property="profileButton" destination="ggj-6a-cFZ" id="h3G-Gi-0oF"/>
                         <outlet property="profileImageView" destination="0W8-HV-5cs" id="pe3-Ct-bTW"/>
+                        <outlet property="profileStackView" destination="2zI-Vd-Epx" id="Cvc-N1-4gj"/>
                         <outlet property="rewardsStackView" destination="QOo-Wr-qfr" id="wvJ-iZ-8Nn"/>
                         <outlet property="transactionsStackView" destination="RdX-Gu-7bw" id="bLK-uH-HFX"/>
                         <outlet property="usernameTextField" destination="c93-o9-4jO" id="nXK-SH-h7W"/>
