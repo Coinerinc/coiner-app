@@ -68,7 +68,7 @@ class DirectoryViewController: UIViewController {
         case false :
             print("TODO: Instantiate Log In / Sign Up View Controller")
         case true :
-            print("TODO: Instantiate Alert To Confirm Log Out")
+            Alerts.presentBiOptionAlert(presentingViewController: self, withTitle: "Leaving Coiner?", withMessage: "Are you sure you wish to log out of your Coiner account?", defaultActionTitle: "Log Out", destructiveActionTitle: "Cancel", withCompletion: handleLogOut())
         }
     }
     
@@ -122,6 +122,10 @@ class DirectoryViewController: UIViewController {
             isCurrentlyLoggedIn = true
             usernameTextField.text = currentUser?.name
         }
+    }
+    
+    func handleLogOut() {
+        print("TODO: Implement Handle Log Out Function")
     }
 }
 

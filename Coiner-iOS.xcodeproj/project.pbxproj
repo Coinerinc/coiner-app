@@ -17,6 +17,7 @@
 		2C0240A822BB37A5006E2585 /* TemporaryVendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240A722BB37A5006E2585 /* TemporaryVendors.swift */; };
 		2C0240AA22BB4D25006E2585 /* DirectoryScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240A922BB4D25006E2585 /* DirectoryScrollViewDelegate.swift */; };
 		2C0240AC22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */; };
+		2C0240AE22BBB9C4006E2585 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0240AD22BBB9C4006E2585 /* Alerts.swift */; };
 		2C277DFA22B9DF5C00AB4DCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277DF922B9DF5C00AB4DCD /* AppDelegate.swift */; };
 		2C277DFC22B9DF5C00AB4DCD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277DFB22B9DF5C00AB4DCD /* MapViewController.swift */; };
 		2C277DFF22B9DF5C00AB4DCD /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C277DFD22B9DF5C00AB4DCD /* Map.storyboard */; };
@@ -45,6 +46,7 @@
 		2C0240A722BB37A5006E2585 /* TemporaryVendors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryVendors.swift; sourceTree = "<group>"; };
 		2C0240A922BB4D25006E2585 /* DirectoryScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryScrollViewDelegate.swift; sourceTree = "<group>"; };
 		2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLOcationCoordinate2DExtensions.swift; sourceTree = "<group>"; };
+		2C0240AD22BBB9C4006E2585 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		2C277DF622B9DF5C00AB4DCD /* Coiner-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coiner-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C277DF922B9DF5C00AB4DCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C277DFB22B9DF5C00AB4DCD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		2C02409B22BB1287006E2585 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				2C0240AD22BBB9C4006E2585 /* Alerts.swift */,
 			);
 			path = Alerts;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				2C0240A622BB3701006E2585 /* Bank.swift in Sources */,
 				2C277E1822B9E89E00AB4DCD /* MapViewGMSExtension.swift in Sources */,
 				2C277E0E22B9E00300AB4DCD /* User.swift in Sources */,
+				2C0240AE22BBB9C4006E2585 /* Alerts.swift in Sources */,
 				2C0240AC22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
