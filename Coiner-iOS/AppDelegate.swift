@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSPlacesClient.provideAPIKey("AIzaSyB-3ct-ok6PQMSKtnTtmeIRO4lx9bLQW4Y")
         // MARK:
         print("Remove Testing User in App Delegate")
-        currentUser = User(uniqueID: "2019", phoneNumber: 7322788499, email: "coiner@Coiner.com", name: "Coiner", imageID: "2019", joinedDate: Date(), favorites: [], transactions: [], rewards: [])
+        currentUser = User(uniqueID: "2019", phoneNumber: 7322788499, email: "coiner@Coiner.com", name: "Jane Dow", imageID: "2019", joinedDate: Date(), favorites: [], transactions: [], rewards: [])
         return true
     }
 

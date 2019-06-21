@@ -25,18 +25,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnQ-sj-51o" userLabel="Coiner Icon View" customClass="RoundedView" customModule="Coiner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="165.5" y="759" width="83" height="83"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="PQJ-eK-Jat">
-                                        <rect key="frame" x="15" y="10" width="53" height="58"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinerLogoCircleBlueBackground" translatesAutoresizingMaskIntoConstraints="NO" id="PQJ-eK-Jat" customClass="RoundedImageView" customModule="Coiner_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.05509718508" green="0.01947172917" blue="0.80397069450000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="PQJ-eK-Jat" firstAttribute="top" secondItem="HnQ-sj-51o" secondAttribute="top" constant="10" id="Rzd-om-xtJ"/>
+                                    <constraint firstItem="PQJ-eK-Jat" firstAttribute="top" secondItem="HnQ-sj-51o" secondAttribute="top" id="Rzd-om-xtJ"/>
                                     <constraint firstAttribute="width" secondItem="HnQ-sj-51o" secondAttribute="height" multiplier="1:1" id="YkM-NZ-tSy"/>
-                                    <constraint firstItem="PQJ-eK-Jat" firstAttribute="leading" secondItem="HnQ-sj-51o" secondAttribute="leading" constant="15" id="pr5-Oo-crR"/>
-                                    <constraint firstAttribute="trailing" secondItem="PQJ-eK-Jat" secondAttribute="trailing" constant="15" id="tjv-ga-tbh"/>
-                                    <constraint firstAttribute="bottom" secondItem="PQJ-eK-Jat" secondAttribute="bottom" constant="15" id="vkq-VF-BQ9"/>
+                                    <constraint firstItem="PQJ-eK-Jat" firstAttribute="leading" secondItem="HnQ-sj-51o" secondAttribute="leading" id="pr5-Oo-crR"/>
+                                    <constraint firstAttribute="trailing" secondItem="PQJ-eK-Jat" secondAttribute="trailing" id="tjv-ga-tbh"/>
+                                    <constraint firstAttribute="bottom" secondItem="PQJ-eK-Jat" secondAttribute="bottom" id="vkq-VF-BQ9"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfO-ih-RIF" userLabel="Navigator Icon View" customClass="RoundedImageView" customModule="Coiner_iOS" customModuleProvider="target">
                                 <rect key="frame" x="332" y="790" width="62" height="62"/>
@@ -270,7 +273,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coinerLogo" width="550" height="680"/>
+        <image name="coinerLogoCircleBlueBackground" width="8500" height="8500"/>
         <image name="downArrow" width="2860" height="4002"/>
         <image name="navigatorIcon" width="3988" height="3988"/>
     </resources>

@@ -18,6 +18,7 @@ class CoinerConnectionViewController: UIViewController {
     var isCurrentlyLoggedIn = false
 
     @IBOutlet weak var blurredView: UIView!
+    @IBOutlet weak var instructionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,8 @@ class CoinerConnectionViewController: UIViewController {
     
 
     func setUpBlurredView() {
-        self.blurredView.addBlurredEffect()
+        blurredView.addBlurredEffect()
+
     }
     
     func checkForCurrentUser() {

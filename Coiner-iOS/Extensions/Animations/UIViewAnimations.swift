@@ -16,7 +16,6 @@ extension UIView {
         rotateAnimation.toValue = CGFloat.pi * 2
         rotateAnimation.duration = 1
         rotateAnimation.repeatCount = Float(numberOfRotations)
-        
         self.layer.add(rotateAnimation, forKey: nil)
     }
 }

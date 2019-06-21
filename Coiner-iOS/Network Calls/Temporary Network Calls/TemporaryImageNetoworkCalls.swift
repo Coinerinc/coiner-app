@@ -29,4 +29,22 @@ struct TemporaryImageNetworkCalls {
             task.resume()
         }
     }
+    
+    static func fetchProfileImageFromWebsite(withProfileImageID profileImageID: String, completion: @escaping (_: UIImage) ->()) {
+        let specificImageURL = myWebsiteURL + profileImageID.uppercased() + ".png"
+        if let url = URL(string: specificImageURL) {
+            var fetchedIconData = Data()
+            let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                if let data = data {
+                    fetchedIconData = data
+                } else {
+                    if let error = error {
+                        print(error.localizedDescription)
+                    }
+                }
+                completion(UIImage(data: fetchedIconData) ?? UIImage())
+            }
+            task.resume()
+        }
+    }
 }

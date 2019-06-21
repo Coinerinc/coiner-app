@@ -55,6 +55,7 @@
 		2C71821C22BBF37C005A1AF5 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */; };
 		2C71821E22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821D22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift */; };
 		2C71822022BC2FE0005A1AF5 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */; };
+		2C71822222BC4ED3005A1AF5 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71822122BC4ED3005A1AF5 /* Address.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +108,7 @@
 		2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		2C71821D22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinerConnectionGestureRecognizerExtension.swift; sourceTree = "<group>"; };
 		2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
+		2C71822122BC4ED3005A1AF5 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		379317DC4DC5D181F5127470 /* Pods_Coiner_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coiner_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E24A50399A6E753EC07C44A /* Pods-Coiner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B014288473987EA1F765B124 /* Pods-Coiner-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				2C0240A022BB3676006E2585 /* Temporary Models */,
 				2C277E0D22B9E00300AB4DCD /* User.swift */,
 				2C02409E22BB35FA006E2585 /* Vendor.swift */,
+				2C71822122BC4ED3005A1AF5 /* Address.swift */,
 				2C0240A122BB36C0006E2585 /* Transaction.swift */,
 				2C0240A322BB36CD006E2585 /* Reward.swift */,
 				2C0240A522BB3701006E2585 /* Bank.swift */,
@@ -519,6 +522,7 @@
 				2C7181FC22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift in Sources */,
 				2C0240A422BB36CD006E2585 /* Reward.swift in Sources */,
 				2C0240A822BB37A5006E2585 /* TemporaryVendors.swift in Sources */,
+				2C71822222BC4ED3005A1AF5 /* Address.swift in Sources */,
 				2C0240AA22BB4D25006E2585 /* DirectoryScrollViewDelegate.swift in Sources */,
 				2C7181F922BBC792005A1AF5 /* TransactionTableViewCell.swift in Sources */,
 				2C02409D22BB12F1006E2585 /* ViewControllerTransitions.swift in Sources */,

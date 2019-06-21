@@ -15,5 +15,6 @@ struct Vendor: Equatable {
     var name: String
     var coordinates: CLLocationCoordinate2D
     var imageID: String
-//    var joinedDate: Date 
+//    var joinedDate: Date
+//    var addresss: Address
 }

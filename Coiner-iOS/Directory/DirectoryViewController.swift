@@ -164,10 +164,14 @@ class DirectoryViewController: UIViewController {
     }
     
     func checkForCurrentUser() {
-
         if currentUser != nil {
             isCurrentlyLoggedIn = true
-            usernameTextField.text = currentUser?.name
+            TemporaryImageNetworkCalls.fetchProfileImageFromWebsite(withProfileImageID: String(currentUser!.name.first!)) { (profileImage) in
+                DispatchQueue.main.async {
+                    self.profileImageView.image = profileImage
+                    self.usernameTextField.text = currentUser?.name
+                }
+            }
             print("TODO: Set Current Balance Label && Total Reward Points Label")
         } else {
             isCurrentlyLoggedIn = false 
