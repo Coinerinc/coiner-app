@@ -56,6 +56,7 @@
 		2C71821E22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821D22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift */; };
 		2C71822022BC2FE0005A1AF5 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */; };
 		2C71822222BC4ED3005A1AF5 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71822122BC4ED3005A1AF5 /* Address.swift */; };
+		2C71822422BD2283005A1AF5 /* Authentication Network Calls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C71822322BD2283005A1AF5 /* Authentication Network Calls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +110,7 @@
 		2C71821D22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinerConnectionGestureRecognizerExtension.swift; sourceTree = "<group>"; };
 		2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		2C71822122BC4ED3005A1AF5 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		2C71822322BD2283005A1AF5 /* Authentication Network Calls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Authentication Network Calls.swift"; sourceTree = "<group>"; };
 		379317DC4DC5D181F5127470 /* Pods_Coiner_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coiner_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E24A50399A6E753EC07C44A /* Pods-Coiner-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B014288473987EA1F765B124 /* Pods-Coiner-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coiner-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coiner-iOS/Pods-Coiner-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,7 +238,8 @@
 				2C02409522BB11A6006E2585 /* Rewards */,
 				2C02409722BB11B2006E2585 /* Wallet */,
 				2C02409822BB11BA006E2585 /* About Coiner */,
-				2C71821722BBEAA4005A1AF5 /* Network Calls */,
+				2C71821822BBEAAF005A1AF5 /* Temporary Network Calls */,
+				2C71821722BBEAA4005A1AF5 /* AWS EC2 Network Calls */,
 				2C02409B22BB1287006E2585 /* Alerts */,
 				2C02409A22BB127B006E2585 /* Transitions */,
 				2C277E0F22B9E12000AB4DCD /* Extensions */,
@@ -336,12 +339,12 @@
 			path = "Table View";
 			sourceTree = "<group>";
 		};
-		2C71821722BBEAA4005A1AF5 /* Network Calls */ = {
+		2C71821722BBEAA4005A1AF5 /* AWS EC2 Network Calls */ = {
 			isa = PBXGroup;
 			children = (
-				2C71821822BBEAAF005A1AF5 /* Temporary Network Calls */,
+				2C71822322BD2283005A1AF5 /* Authentication Network Calls.swift */,
 			);
-			path = "Network Calls";
+			path = "AWS EC2 Network Calls";
 			sourceTree = "<group>";
 		};
 		2C71821822BBEAAF005A1AF5 /* Temporary Network Calls */ = {
@@ -531,6 +534,7 @@
 				2C0240A622BB3701006E2585 /* Bank.swift in Sources */,
 				2C277E1822B9E89E00AB4DCD /* MapViewGMSExtension.swift in Sources */,
 				2C71821A22BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift in Sources */,
+				2C71822422BD2283005A1AF5 /* Authentication Network Calls.swift in Sources */,
 				2C7181F522BBC773005A1AF5 /* VendorInformationTableViewCell.swift in Sources */,
 				2C277E0E22B9E00300AB4DCD /* User.swift in Sources */,
 				2C71821022BBE22B005A1AF5 /* WalletViewController.swift in Sources */,
