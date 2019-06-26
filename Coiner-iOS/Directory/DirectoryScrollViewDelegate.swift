@@ -22,7 +22,8 @@ extension DirectoryViewController: UIScrollViewDelegate {
             rewardsStackView.isHidden = true
             walletStackView.isHidden = true
             logOut_signInButton.setTitle("Log In/Sign Up", for: .normal)
-            logOut_signInButton.tintColor = #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1)
+            logOut_signInButton.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+            logOut_signInButton.backgroundColor = #colorLiteral(red: 0.06145214289, green: 0.01831493899, blue: 0.8379225731, alpha: 1)
         case true:
             welcomeLabel.isHidden = true 
             currentUserView.isHidden = false
@@ -32,6 +33,7 @@ extension DirectoryViewController: UIScrollViewDelegate {
             walletStackView.isHidden = false
             logOut_signInButton.setTitle("Log Out", for: .normal)
             logOut_signInButton.tintColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+            logOut_signInButton.backgroundColor = .white
         }
     }
     

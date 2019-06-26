@@ -15,7 +15,7 @@ class MapViewController: UIViewController {
     
     var locationManager = CLLocationManager()
     var currentLocation: CLLocationCoordinate2D?
-    var zoomLevel: Float = 12.0
+    var zoomLevel: Float = 15.0
     var vendors = TemporaryVendors.vendors
     var selectedVendor: Vendor?
     var transactionsAtSelectedVendor = [Transaction]() 

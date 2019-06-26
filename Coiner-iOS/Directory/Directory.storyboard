@@ -257,6 +257,11 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKJ-2W-Vwr" userLabel="Log Out">
                                                 <rect key="frame" x="128" y="812" width="55" height="30"/>
                                                 <state key="normal" title="Log Out"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="didTapLogOut_SignInButton:" destination="q8U-Yu-haf" eventType="touchUpInside" id="pxw-3J-fsL"/>
                                                 </connections>
@@ -333,6 +338,7 @@
                         <outlet property="dimView" destination="56Y-EJ-9R7" id="U6c-hH-gnc"/>
                         <outlet property="drawerIconView" destination="tpH-Q6-GMf" id="Kcv-2d-sJX"/>
                         <outlet property="drawerScrollView" destination="0eB-ct-F75" id="zbh-zX-5It"/>
+                        <outlet property="drawerView" destination="p1N-WV-SV0" id="ojX-w0-5Gi"/>
                         <outlet property="logOut_signInButton" destination="WKJ-2W-Vwr" id="AFp-wa-IZg"/>
                         <outlet property="mainStackView" destination="VXu-Vd-Lh9" id="IL8-Oz-wGM"/>
                         <outlet property="profileButton" destination="ggj-6a-cFZ" id="h3G-Gi-0oF"/>

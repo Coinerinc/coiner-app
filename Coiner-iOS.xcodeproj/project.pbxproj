@@ -34,6 +34,8 @@
 		2C277E2722B9FA0C00AB4DCD /* DirectoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2622B9FA0C00AB4DCD /* DirectoryViewController.swift */; };
 		2C277E2922BA605400AB4DCD /* DirectoryGestureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2822BA605400AB4DCD /* DirectoryGestureExtensions.swift */; };
 		2C277E2B22BA678A00AB4DCD /* DirectoryAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C277E2A22BA678A00AB4DCD /* DirectoryAnimations.swift */; };
+		2C63B1AD22BD2ED9006A9758 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63B1AC22BD2ED9006A9758 /* DateExtensions.swift */; };
+		2C63B1AF22BD3259006A9758 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C63B1AE22BD3259006A9758 /* DoubleExtensions.swift */; };
 		2C7181F522BBC773005A1AF5 /* VendorInformationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181F422BBC773005A1AF5 /* VendorInformationTableViewCell.swift */; };
 		2C7181F722BBC783005A1AF5 /* VendorImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181F622BBC783005A1AF5 /* VendorImageTableViewCell.swift */; };
 		2C7181F922BBC792005A1AF5 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7181F822BBC792005A1AF5 /* TransactionTableViewCell.swift */; };
@@ -88,6 +90,8 @@
 		2C277E2622B9FA0C00AB4DCD /* DirectoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewController.swift; sourceTree = "<group>"; };
 		2C277E2822BA605400AB4DCD /* DirectoryGestureExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryGestureExtensions.swift; sourceTree = "<group>"; };
 		2C277E2A22BA678A00AB4DCD /* DirectoryAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryAnimations.swift; sourceTree = "<group>"; };
+		2C63B1AC22BD2ED9006A9758 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		2C63B1AE22BD3259006A9758 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		2C7181F422BBC773005A1AF5 /* VendorInformationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorInformationTableViewCell.swift; sourceTree = "<group>"; };
 		2C7181F622BBC783005A1AF5 /* VendorImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorImageTableViewCell.swift; sourceTree = "<group>"; };
 		2C7181F822BBC792005A1AF5 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
@@ -287,6 +291,8 @@
 				2C0240AB22BB4DDE006E2585 /* CLLOcationCoordinate2DExtensions.swift */,
 				2C71821B22BBF37C005A1AF5 /* UIImageExtensions.swift */,
 				2C71821F22BC2FE0005A1AF5 /* GradientBackground.swift */,
+				2C63B1AC22BD2ED9006A9758 /* DateExtensions.swift */,
+				2C63B1AE22BD3259006A9758 /* DoubleExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -522,6 +528,7 @@
 				2C7181FE22BBD318005A1AF5 /* TemporaryTransactions.swift in Sources */,
 				2C71821E22BBF5CB005A1AF5 /* CoinerConnectionGestureRecognizerExtension.swift in Sources */,
 				2C277DFA22B9DF5C00AB4DCD /* AppDelegate.swift in Sources */,
+				2C63B1AD22BD2ED9006A9758 /* DateExtensions.swift in Sources */,
 				2C7181FC22BBC8B9005A1AF5 /* MapViewTableViewExtension.swift in Sources */,
 				2C0240A422BB36CD006E2585 /* Reward.swift in Sources */,
 				2C0240A822BB37A5006E2585 /* TemporaryVendors.swift in Sources */,
@@ -531,6 +538,7 @@
 				2C02409D22BB12F1006E2585 /* ViewControllerTransitions.swift in Sources */,
 				2C71822022BC2FE0005A1AF5 /* GradientBackground.swift in Sources */,
 				2C02409F22BB35FA006E2585 /* Vendor.swift in Sources */,
+				2C63B1AF22BD3259006A9758 /* DoubleExtensions.swift in Sources */,
 				2C0240A622BB3701006E2585 /* Bank.swift in Sources */,
 				2C277E1822B9E89E00AB4DCD /* MapViewGMSExtension.swift in Sources */,
 				2C71821A22BBEADE005A1AF5 /* TemporaryImageNetoworkCalls.swift in Sources */,

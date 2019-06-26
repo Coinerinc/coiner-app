@@ -26,6 +26,7 @@ class DirectoryViewController: UIViewController {
     @IBOutlet weak var dimView: UIView!
     @IBOutlet weak var drawerIconView: RoundedImageView!
     @IBOutlet weak var drawerScrollView: UIScrollView!
+    @IBOutlet weak var drawerView: UIView!
     
     @IBOutlet weak var currentUserView: UIView!
     @IBOutlet weak var welcomeLabel: UILabel!

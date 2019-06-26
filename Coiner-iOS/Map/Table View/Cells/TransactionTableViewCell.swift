@@ -24,8 +24,8 @@ class TransactionTableViewCell: UITableViewCell {
     func configureTransactionCell() {
         if let transaction = transaction {
             // MARK: Format Date in Date Extension && Set up Reward Points && Format Amount
-            transactionDateLabel.text = "\(transaction.date)"
-            transactionAmountLabel.text = "$\(transaction.amount)"
+            transactionDateLabel.text = transaction.date.formattedToString(withFormat: "MMMM dd, YYYY hh:mm a")
+            transactionAmountLabel.text = transaction.amount.formatToCurrencyString()
         }
     }
 
